@@ -59,3 +59,9 @@
 - 名前などを入力するための入力欄を作成する際は、input要素
 - 1行のテキスト入力欄の作成を行いたいので、type属性はtext
 - ```<input type="text" placeholder="NAME" class="name_form">```
+***
+21
+- リセットCSSとは、ブラウザで設定されているデフォルトCSSをリセットするためのCSS。どのブラウザで閲覧しても見た目が変わらないように、デフォルトCSSを削除。
+- viewportとはブラウザで表示されている領域のこと。
+- vhはviewport heightの略で、viewportの高さに対する割合のこと。
+***

@@ -85,3 +85,9 @@ Cocoonテーマは「親テーマ」「子テーマ」双方をインストー�
 Invisible reCaptcha for WordPressで対策  
 コメント投稿が行われるのでチェック  
 
+
+サイト訪問者へエラー表示を行う設定になっています、に対して  
+wp-config.phpの  
+define('WP_DEBUG', true)  
+この場合、trueをfalseに変更  
+define('WP_DEBUG', false)  

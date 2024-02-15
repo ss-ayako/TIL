@@ -120,4 +120,8 @@ JPGで保存
 - フォルダ名を削除してドメイン名だけに
 - WordPressアドレス（URL）のほうを変更しない
 - FTPソフトで、Wordpressをアップロードしたフォルダにアクセスし、「index.php」をローカル環境へダウンロード
+- require __DIR__ . '/wp-blog-header.php';この文を変更する
+- require __DIR__ . '/wp/wp-blog-header.php';
+- 編集したindex.phpを再びアップロード
+
 

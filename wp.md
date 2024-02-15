@@ -123,5 +123,7 @@ JPGで保存
 - require __DIR__ . '/wp-blog-header.php';この文を変更する
 - require __DIR__ . '/wp/wp-blog-header.php';
 - 編集したindex.phpを再びアップロード
+- アップロード先は、先ほどダウンロードしたWordpressがインストールされているフォルダではなく、一つ上のpublic.htmlの直下にアップロード
+- 
 
 

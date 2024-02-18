@@ -22,3 +22,4 @@
 - 数字にはinteger型
 - 短文の文字にはstring型
 - 長文の文字にはtext型
+- マイグレーションを差し戻すには、rails db:rollback

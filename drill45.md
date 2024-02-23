@@ -39,7 +39,7 @@
 48
 - Railsアプリケーションではフォームを作成する場合はヘルパーメソッドというものを使用
 - 投稿ページなどにおけるフォームの実装で用いられるform_withというヘルパーメソッド
-- '''<%= form_with url: "/posts", method: :post, local: true do |form| %>'''
+- <%= form_with url: "/posts", method: :post, local: true do |form| %>
 - リクエストを送信するパスが/posts
 - 送信するHTTPメソッドがpost
 ***
@@ -48,8 +48,8 @@
 - 投稿ページなどでフォームの実装をする際に使用するform_with
 - リンクの実装する際に使用するlink_to
 - トップページの『新規投稿』のリンクをクリックすることで、URL が/posts/newの新規投稿登録のページに遷移するように
-- '''<%= link_to 'リンクに表示する文字', 'リンク先のURL' %>'''
-- '''<%= link_to '新規投稿', '/posts/new' %>'''
+- <%= link_to 'リンクに表示する文字', 'リンク先のURL' %>
+- <%= link_to '新規投稿', '/posts/new' %>
 ***
 
 

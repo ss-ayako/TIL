@@ -36,3 +36,12 @@
 -  テーブルにレコードを保存
 - irb(main):003:0> post.save
 ***
+48
+- Railsアプリケーションではフォームを作成する場合はヘルパーメソッドというものを使用
+- 投稿ページなどにおけるフォームの実装で用いられるform_withというヘルパーメソッド
+- '''<%= form_with url: "/posts", method: :post, local: true do |form| %>'''
+- リクエストを送信するパスが/posts
+- 送信するHTTPメソッドがpost
+***
+49
+

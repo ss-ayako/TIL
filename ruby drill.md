@@ -6,7 +6,8 @@
  puts hash.keys  
  one  
  two  
- three
+ three  
+ 
 オブジェクト.valuesで、ハッシュに含まれる値を取得  
 hash = { one: 1, two: 2, three: 3 }  
 puts hash.values  

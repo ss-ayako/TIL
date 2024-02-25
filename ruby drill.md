@@ -45,5 +45,32 @@ end
 今回は配列の中にハッシュが格納  
 each文でハッシュの1つ1つを取り出した上で,ハッシュ[:user][:profile][:name]  
 ***
+3  
+国語が80点、英語が50点、数学が70点の場合のテストの平均点をターミナルに出力するプログラム  
+変数を使って定義  
+３教科の平均点は、◯点です。 
+
+japanese_score = 80  
+english_score = 50  
+math_score = 70  
+
+average_score = (japanese_score + english_score + math_score) / 3  
+
+puts "3教科の平均点は、#{average_score}点です。"  
+各教科の点数をそれぞれ変数として定義  
+変数名はjapanese_score、japanese、kokugo_score、kokugo  
+
+平均点に関しても変数を使うほうが望ましいです。変数を使わない場合は以下のようになります。
+
+
+puts "3教科の平均点は、#{(japanese_score + english_score + math_score) / 3}点です。"  
+これだとコードが読みにくく、(japanese_score + english_score + math_score) / 3が何を指しているのかを見ただけでは判断することが難しい  
+そこで平均点も以下のように変数として定義  
+average_score = (japanese_score + english_score + math_score) / 3  
+平均点の出力の際には、文字列と数値の連結となる  
+式展開かto_sメソッドを使う  
+ 
+***
+
 
  

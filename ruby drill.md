@@ -71,6 +71,13 @@ average_score = (japanese_score + english_score + math_score) / 3
 式展開かto_sメソッドを使う  
  
 ***
-4
---
- 
+4  
+class Article  
+
+  def initialize(author, title, content)  
+    @author = author  
+    @title = title  
+    @content = content  
+  end  
+
+end  

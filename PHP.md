@@ -55,6 +55,65 @@
 ``` }```   
 ``` ?>```   
 ***
+```php
+<?php
+$prices = array(1000, 650, 750, 800);
+echo '$pricesの値: ';
+foreach ($prices as $price) {
+  echo $price.' ';
+}
+echo '<br>';
+echo '-----';
+echo '<br>';
+```
+
+1. **価格の配列の初期化:**
+   ```php
+   $prices = array(1000, 650, 750, 800);
+   ```
+   配列 `$prices` を初期化し、商品の価格を含んでいます。
+
+2. **価格の表示:**
+   ```php
+   echo '$pricesの値: ';
+   foreach ($prices as $price) {
+     echo $price.' ';
+   }
+   ```
+   `foreach` ループを使用して、価格の配列 `$prices` の各要素を取り出し、それをスペースで区切って表示します。表示結果は `$pricesの値: 1000 650 750 800` となります。
+
+3. **区切り線の表示:**
+   ```php
+   echo '<br>';
+   echo '-----';
+   echo '<br>';
+   ```
+   区切り線として `-----` を表示し、その後に改行を挿入します。
+
+```php
+// この下にコードを書いてください
+$totalprice = 0;
+foreach($prices as $price){
+ $totalprice += $price;}
+echo "合計金額は".$totalprice."円です";
+?>
+```
+
+4. **合計金額の計算と表示:**
+   ```php
+   $totalprice = 0;
+   foreach($prices as $price){
+     $totalprice += $price;
+   }
+   ```
+   `foreach` ループを使用して、価格の配列 `$prices` の各要素を取り出し、それらを合計するための `$totalprice` 変数に加算します。
+
+5. **結果の表示:**
+   ```php
+   echo "合計金額は".$totalprice."円です";
+   ```
+   最終的な合計金額が表示されます。この場合、`合計金額は3400円です` となります。
+***
 - テキストボックスを作る
 - ```<form action =”送信先のurl”　method="ここはgetかpost">```
 - アクション属性、メソッド属性を使って記述

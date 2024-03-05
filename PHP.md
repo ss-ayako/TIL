@@ -4,7 +4,7 @@
 - ```echo $name;```
 - ```改行はこれ echo '<br>'```
 ***
-変数$nameを用いて、My name is ○○と出力してください。
+変数$nameを用いて、My name is ○○と出力してください。  
 ```<?php```  
 ```$name = 'Tom';```  
 ```echo '変数$nameの値: '.$name;```  

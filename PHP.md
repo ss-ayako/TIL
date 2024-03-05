@@ -1,8 +1,8 @@
 -　変数
 - 宣言いらない
-```$name= 'My name is ○○';```
-```echo $name;```
-```改行はこれ echo '<br>'```
+-```$name= 'My name is ○○';```
+-```echo $name;```
+-```改行はこれ echo '<br>'```
 ***
 - if文
 - if(条件式）{

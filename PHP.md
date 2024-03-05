@@ -35,6 +35,7 @@
 - }else{
 - echo 'この処理が実行される’；
 - }
+- elseのとこ条件式書かない！！！
 ***
 - テキストボックスを作る
 - ```<form action =”送信先のurl”　method="ここはgetかpost">```

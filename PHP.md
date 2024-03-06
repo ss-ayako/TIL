@@ -178,3 +178,33 @@ foreach ($menus as $menu) {
    ```
 
 ***
+提供されたコードには、`foreach` ループ内で合計金額を表示し続けてしまう問題があります。具体的には、各メニューの情報ごとに合計金額が表示されてしまいます。正しくは、`foreach` ループの終了後に一度だけ合計金額を表示するように修正する必要があります。以下は修正後のコードです。
+
+```php
+<?php
+$menus = array(
+  array('name' => 'CURRY', 'price' => 900),
+  array('name' => 'PASTA', 'price' => 1200),
+  array('name' => 'COFFEE', 'price' => 600)
+);
+
+// この下にコードを書いてください
+$totalprice = 0;
+
+foreach ($menus as $menu) {
+   $price = $menu['price'];
+ 
+  echo $menu['name']."は".$menu['price']."円です";
+  echo '<br>';
+  
+  $totalprice += $price;
+}
+
+echo "合計金額は".$totalprice."円です";
+?>
+```
+
+修正点：
+echo "合計金額は".$totalprice."円です";の後に}ではダメな理由。  
+1. `echo "合計金額は".$totalprice."円です";` を `foreach` ループの外に移動し、ループの終了後に一度だけ合計金額を表示しています。
+これにより、各メニューの情報が表示された後に一度だけ合計金額が正しく表示されるようになります。

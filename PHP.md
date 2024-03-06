@@ -122,3 +122,59 @@ echo "合計金額は".$totalprice."円です";
 ***
 - ```<?php と ?>``` は、一種のお作法で、このように書くことで```「<?PHP」」``` から```「 ?>」 ```までの範囲がPHPである」と宣言
 - htmlの中に記述するときなどに使用する
+***
+
+```php
+<?php
+$menus = array(
+  array('name' => 'CURRY', 'price' => 900),
+  array('name' => 'PASTA', 'price' => 1200),
+  array('name' => 'COFFEE', 'price' => 600)
+);
+```
+
+1. **配列の初期化:**
+   ```php
+   $menus = array(
+     array('name' => 'CURRY', 'price' => 900),
+     array('name' => 'PASTA', 'price' => 1200),
+     array('name' => 'COFFEE', 'price' => 600)
+   );
+   ```
+   配列 `$menus` を初期化し、3つの連想配列を要素として持ちます。各連想配列は `'name'` キーと `'price'` キーを持ち、それぞれメニュー名と価格を表しています。
+
+```php
+foreach ($menus as $menu) {
+  echo $menu['name']."は".$menu['price']."円です";
+  echo '<br>';
+}
+```
+
+2. **`foreach` ループ:**
+   ```php
+   foreach ($menus as $menu) {
+   ```
+   `foreach` ループを使用して、`$menus` 配列の各要素を `$menu` として取り出します。`$menu` は各要素が持つ配列です。
+
+3. **メニュー情報の表示:**
+   ```php
+   echo $menu['name']."は".$menu['price']."円です";
+   ```
+   各メニューの情報を表示します。`$menu['name']` はメニュー名、`$menu['price']` はメニューの価格です。例えば、"CURRYは900円です" といった形式で表示されます。
+
+4. **改行の追加:**
+   ```php
+   echo '<br>';
+   ```
+   各メニューの情報を表示した後に改行を挿入します。
+
+```php
+?>
+```
+
+5. **PHPコードの終了:**
+   ```php
+   ?>
+   ```
+
+***

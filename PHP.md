@@ -321,22 +321,23 @@ echo $pasta->name;// $pastaのnameプロパティをecho
 ***
 
 ```<?php
-```class Menu {
-```  public $name;//Menuクラスに、$nameというプロパティを定義
+class Menu {
+ public $name;//Menuクラスに、$nameというプロパティを定義
   
-``` public function hello(){// helloメソッドを定義
-``` echo '私はMenuクラスのインスタンスです'; //私はMenuクラスのインスタンスですとecho
-```}
-```}
-```$curry = new Menu();
-```$pasta = new Menu();
-```$curry->name = 'CURRY';
-```$pasta->name = 'PASTA';
-```$curry->hello();// $curryに対してhelloメソッドを呼び出し
+ public function hello(){// helloメソッドを定義
+ echo '私はMenuクラスのインスタンスです'; //私はMenuクラスのインスタンスですとecho
+}
+}
+$curry = new Menu();
+$pasta = new Menu();
+$curry->name = 'CURRY';
+$pasta->name = 'PASTA';
+$curry->hello();// $curryに対してhelloメソッドを呼び出し
 
-```echo '<br>';
-```$pasta->hello();// $pastaに対してhelloメソッドを呼び出し
+echo '<br>';
+$pasta->hello();// $pastaに対してhelloメソッドを呼び出し
 
-```?>
+?>
+```
 
 ***

@@ -68,9 +68,9 @@ $pasta = new Menu('PASTA');
 ?>
 
 
-<p><?php echo $curry->name ?></p><!--<p>タグの中で、$curryのnameプロパティを表示-->
+<p><?php echo $curry->name ?></p> //<p>タグの中で、$curryのnameプロパティを表示-->
 
 
-<p><?php echo $pasta->name ?></p><!--<p>タグの中で、$pastaのnameプロパティを表示-->
+<p><?php echo $pasta->name ?></p> //<p>タグの中で、$pastaのnameプロパティを表示-->
 ```
 ***

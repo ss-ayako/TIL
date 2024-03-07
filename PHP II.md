@@ -35,9 +35,9 @@ class Menu {
   }
 }
 
-$curry = new Menu();//上に記述したコンストラクタが実行される
+$curry = new Menu();//生成したインスタンスを変数$curry に代入,上に記述したコンストラクタが実行される
 echo '<br>';
-$pasta = new Menu();//上に記述したコンストラクタが実行される
+$pasta = new Menu();//生成したインスタンスを変数$pasta に代入,上に記述したコンストラクタが実行される
 echo '<br>';
 $curry->name = 'CURRY';
 $pasta->name = 'PASTA';

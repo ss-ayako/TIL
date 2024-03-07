@@ -184,8 +184,8 @@ class Menu {
 ?>
 ```
 
- <!-- $menuのgetTaxIncludedPriceメソッドの戻り値を表示してください -->
-          <p class="price">¥<?php echo $menu->getTaxIncludedPrice() ?>（税込）</p>
+//$menuのgetTaxIncludedPriceメソッドの戻り値を表示してください -->
+<p class="price">¥<?php echo $menu->getTaxIncludedPrice() ?>（税込）</p>
 
 ```
 ***

@@ -103,3 +103,10 @@ $menus=array($juice,$coffee,$curry,$pasta);
      <?php endforeach ?>
 ```
 ***
+コードが長くなったら分ける  
+```
+<?php require_once('menu.php');
+?>
+// menu.phpを読み込み
+```
+***

@@ -304,19 +304,19 @@ echo $maxPriceMenuName."が最高価格で".$maxprice."円です";  // 最高価
    ```
    合計金額と最高価格を最終的に表示します。
 ***
-
 ```<?php
-```class Menu {
-```public $name; //Menuクラスに、$nameというプロパティを定義
-```}
-```$curry = new Menu();//生成したインスタンスを変数$curry に代入
-```$pasta = new Menu();//生成したインスタンスを変数$pasta に代入
-```$curry->name = 'CURRY';// $curryのnameプロパティに'CURRY'を代入
-```$pasta->name = 'PASTA';// $curryのnameプロパティに'CURRY'を代入
-```echo $curry->name;// $curryのnameプロパティをech
-```echo '<br>';
-```echo $pasta->name;// $pastaのnameプロパティをecho
-```?>
+class Menu {
+public $name; //Menuクラスに、$nameというプロパティを定義
+}
+$curry = new Menu();//生成したインスタンスを変数$curry に代入
+$pasta = new Menu();//生成したインスタンスを変数$pasta に代入
+$curry->name = 'CURRY';// $curryのnameプロパティに'CURRY'を代入
+$pasta->name = 'PASTA';// $curryのnameプロパティに'CURRY'を代入
+echo $curry->name;// $curryのnameプロパティをech
+echo '<br>';
+echo $pasta->name;// $pastaのnameプロパティをecho
+?>
+```
 
 ***
 

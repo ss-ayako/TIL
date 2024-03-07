@@ -317,3 +317,25 @@ echo $maxPriceMenuName."が最高価格で".$maxprice."円です";  // 最高価
  ```echo '<br>';
  ```echo $pasta->name;// $pastaのnameプロパティをecho
  ```?>
+***
+ ```<?php
+ ```class Menu {
+ ```  public $name;
+  
+ ```  // helloメソッドを定義してください
+  ``` public function hello(){// helloメソッドを定義
+  ``` echo '私はMenuクラスのインスタンスです'; //私はMenuクラスのインスタンスですとecho
+ ```}
+ ```}
+ ```$curry = new Menu();
+ ```$pasta = new Menu();
+ ```$curry->name = 'CURRY';
+ ```$pasta->name = 'PASTA';
+ ```// $curryに対してhelloメソッドを呼び出してください
+ ```$curry->hello();// $curryに対してhelloメソッドを呼び出し
+
+ ```echo '<br>';
+ ```// $pastaに対してhelloメソッドを呼び出してください
+ ```$pasta->hello();// $pastaに対してhelloメソッドを呼び出し
+
+ ```?>

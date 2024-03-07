@@ -111,3 +111,9 @@ $menus=array($juice,$coffee,$curry,$pasta);
 ```
 読み込んだファイルで定義されているクラスや変数を、require_onceを記述したファイル内で使うことができる  
 ***
+画像を表示するには、htmlタグにPHPを埋め込んで画像を表示  
+echoをしないとphpの処理の結果が出力  
+```
+<img src="<?php echo $menu->image?>">
+```
+***

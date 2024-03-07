@@ -39,8 +39,8 @@ $curry = new Menu();//生成したインスタンスを変数$curry に代入,�
 echo '<br>';
 $pasta = new Menu();//生成したインスタンスを変数$pasta に代入,上に記述したコンストラクタが実行される
 echo '<br>';
-$curry->name = 'CURRY';
-$pasta->name = 'PASTA';
+$curry->name = 'CURRY';// $curryのnameプロパティに'CURRY'を代入
+$pasta->name = 'PASTA';// $curryのnameプロパティに'PASTA'を代入
 $curry->hello();
 echo '<br>';
 $pasta->hello();

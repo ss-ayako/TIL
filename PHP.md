@@ -213,3 +213,94 @@ echo "合計金額は".$totalprice."円です";の後に}ではダメな理由�
 2. ループの終了後に一度だけ合計金額を表示しています。  
 これにより、各メニューの情報が表示された後に一度だけ合計金額が正しく表示されるようになります。
 ***
+もちろんです。提供されたコードを一文ずつ解説します。
+
+```php
+<?php
+$menus = array(
+  array('name' => 'CURRY', 'price' => 900),
+  array('name' => 'PASTA', 'price' => 1200),
+  array('name' => 'COFFEE', 'price' => 600)
+);
+
+// この下にコードを書いてください
+$totalprice = 0;  // 合計金額を入れるための変数
+$maxprice = 0;    // 暫定の最高価格を入れるための変数
+$maxPriceMenuName = '';  // $maxPriceのものの名前を入れるための変数
+
+foreach ($menus as $menu) {
+   $price = $menu['price'];  // メニューの価格を取得
+   $name = $menu['name'];    // メニューの名前を取得
+   
+  echo $name."は".$price."円です";  // メニュー名と価格の表示
+  echo '<br>';  // 改行
+  
+  $totalprice += $price;  // 合計金額に価格を加算
+  
+  if ($price > $maxprice) {
+    $maxprice = $price;
+    $maxPriceMenuName = $name;
+  }
+}
+
+echo "合計金額は".$totalprice."円です";  // 合計金額の表示
+echo '<br>';  // 改行
+echo $maxPriceMenuName."が最高価格で".$maxprice."円です";  // 最高価格の表示
+?>
+```
+
+各行の解説：
+
+1. **メニューの初期化:**
+   ```php
+   $menus = array(
+     array('name' => 'CURRY', 'price' => 900),
+     array('name' => 'PASTA', 'price' => 1200),
+     array('name' => 'COFFEE', 'price' => 600)
+   );
+   ```
+   メニューの情報を持つ連想配列 `$menus` を初期化します。
+
+2. **変数の初期化:**
+   ```php
+   $totalprice = 0;
+   $maxprice = 0;
+   $maxPriceMenuName = '';
+   ```
+   合計金額、最高価格、最高価格のメニュー名を格納するための変数を初期化します。
+
+3. **`foreach` ループ:**
+   ```php
+   foreach ($menus as $menu) {
+   ```
+   `foreach` ループを使用して各メニューの情報にアクセスします。
+
+4. **各メニューの表示と合計金額の計算:**
+   ```php
+   $price = $menu['price'];
+   $name = $menu['name'];
+
+   echo $name."は".$price."円です";
+   echo '<br>';
+
+   $totalprice += $price;
+   ```
+   各メニューの名前と価格を表示し、合計金額を計算します。
+
+5. **最高価格の更新:**
+   ```php
+   if ($price > $maxprice) {
+     $maxprice = $price;
+     $maxPriceMenuName = $name;
+   }
+   ```
+   各メニューの価格が暫定の最高価格よりも高ければ、最高価格とそのメニュー名を更新します。
+
+6. **最終的な合計金額と最高価格の表示:**
+   ```php
+   echo "合計金額は".$totalprice."円です";
+   echo '<br>';
+   echo $maxPriceMenuName."が最高価格で".$maxprice."円です";
+   ```
+   合計金額と最高価格を最終的に表示します。
+   ***

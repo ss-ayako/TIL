@@ -62,7 +62,7 @@ class Menu {
   }
 }
 
-$curry = new Menu('CURRY');
+$curry = new Menu('CURRY');//Menu クラスの新しいインスタンスが生成。$curry という変数には、新しく生成された Menu クラスのインスタンスが代入。'CURRY' はコンストラクタに渡され、$name プロパティが 'CURRY' に設定.
 $pasta = new Menu('PASTA');
 
 ?>

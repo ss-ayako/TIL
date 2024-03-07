@@ -41,9 +41,9 @@ $pasta = new Menu();//生成したインスタンスを変数$pasta に代入,�
 echo '<br>';
 $curry->name = 'CURRY';// $curryのnameプロパティに'CURRY'を代入
 $pasta->name = 'PASTA';// $curryのnameプロパティに'PASTA'を代入
-$curry->hello();
+$curry->hello();// $curryに対してhelloメソッドを呼び出し
 echo '<br>';
-$pasta->hello();
+$pasta->hello();// $pastaに対してhelloメソッドを呼び出し
 
 ?>
 ```

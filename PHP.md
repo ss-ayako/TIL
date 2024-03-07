@@ -306,7 +306,6 @@ echo $maxPriceMenuName."が最高価格で".$maxprice."円です";  // 最高価
    ***
  ```<?php
  ```class Menu {
-  ``` // $nameというプロパティを定義
   ```public $name; //Menuクラスに、$nameというプロパティを定義
  ```}
  ```$curry = new Menu();//生成したインスタンスを変数$curry に代入
@@ -320,9 +319,8 @@ echo $maxPriceMenuName."が最高価格で".$maxprice."円です";  // 最高価
 ***
  ```<?php
  ```class Menu {
- ```  public $name;
+ ```  public $name;//Menuクラスに、$nameというプロパティを定義
   
- ```  // helloメソッドを定義してください
   ``` public function hello(){// helloメソッドを定義
   ``` echo '私はMenuクラスのインスタンスです'; //私はMenuクラスのインスタンスですとecho
  ```}
@@ -331,11 +329,9 @@ echo $maxPriceMenuName."が最高価格で".$maxprice."円です";  // 最高価
  ```$pasta = new Menu();
  ```$curry->name = 'CURRY';
  ```$pasta->name = 'PASTA';
- ```// $curryに対してhelloメソッドを呼び出してください
  ```$curry->hello();// $curryに対してhelloメソッドを呼び出し
 
  ```echo '<br>';
- ```// $pastaに対してhelloメソッドを呼び出してください
  ```$pasta->hello();// $pastaに対してhelloメソッドを呼び出し
 
  ```?>

@@ -74,3 +74,18 @@ $pasta = new Menu('PASTA');
 <p><?php echo $pasta->name ?></p> //<p>タグの中で、$pastaのnameプロパティを表示-->
 ```
 ***
+phpコードが埋め込まれている例  
+```<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Embedded in HTML</title>
+</head>
+<body>
+
+    <h1><?php echo "Hello, World!"; ?></h1>
+
+</body>
+</html>
+```

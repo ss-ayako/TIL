@@ -1,4 +1,4 @@
-<?php
+```<?php
 class Menu {
   public $name;
   
@@ -18,3 +18,4 @@ echo '<br>';
 $pasta->hello();
 
 ?>
+```

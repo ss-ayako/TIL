@@ -303,7 +303,7 @@ echo $maxPriceMenuName."が最高価格で".$maxprice."円です";  // 最高価
    echo $maxPriceMenuName."が最高価格で".$maxprice."円です";
    ```
    合計金額と最高価格を最終的に表示します。
-   ***
+***
  ```<?php
  ```class Menu {
   ```public $name; //Menuクラスに、$nameというプロパティを定義
@@ -335,3 +335,4 @@ echo $maxPriceMenuName."が最高価格で".$maxprice."円です";  // 最高価
  ```$pasta->hello();// $pastaに対してhelloメソッドを呼び出し
 
  ```?>
+***

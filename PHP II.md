@@ -153,3 +153,39 @@ $menus = array($juice, $coffee, $curry, $pasta);
 ?>
 ```
 ***
+```
+<?php
+class Menu {
+  public $name;
+  public $price;
+  public $image;
+  //プロパティの定義
+  
+  public function __construct($name, $price, $image) {
+    //__construct は新しいインスタンスが作成される際に呼び出し
+    $this->name = $name;
+    $this->price = $price;
+    $this->image = $image;
+  }
+  //Menu クラスのインスタンスを生成する際に、
+  //名前 ($name)、価格 ($price)、画像 ($image) を指定して初期化
+  //$this は現在のインスタンスを指す。
+  //これにより、新しく生成されるインスタンスの name, price, image プロパティが、
+  //コンストラクタのパラメータで指定された値で初期化
+  
+  // getTaxIncludedPriceメソッドを定義してください
+   public function getTaxIncludedPrice() {
+     return floor($this->price * 1.08);
+     //だからここも、$priceではなく$this->$price
+   }
+  //$price だけでは変数として解釈され、クラス内のプロパティ price として認識されない。
+  //そのため、$this->price としてクラスのプロパティにアクセス。
+}
+?>
+```
+
+ <!-- $menuのgetTaxIncludedPriceメソッドの戻り値を表示してください -->
+          <p class="price">¥<?php echo $menu->getTaxIncludedPrice() ?>（税込）</p>
+
+```
+***

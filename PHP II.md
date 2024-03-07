@@ -19,3 +19,32 @@ $pasta->hello();
 
 ?>
 ```
+***
+```
+<?php
+class Menu {
+  public $name;
+  
+  // コンストラクタを定義してください
+  public function __construct(){  // コンストラクタを定義
+    echo '１つのメニューが作られました';
+  }
+  
+  public function hello() {
+    echo '私は'.$this->name.'です';
+  }
+}
+
+$curry = new Menu();//上に記述したコンストラクタが実行される
+echo '<br>';
+$pasta = new Menu();//上に記述したコンストラクタが実行される
+echo '<br>';
+$curry->name = 'CURRY';
+$pasta->name = 'PASTA';
+$curry->hello();
+echo '<br>';
+$pasta->hello();
+
+?>
+```
+***

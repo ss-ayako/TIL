@@ -109,4 +109,5 @@ $menus=array($juice,$coffee,$curry,$pasta);
 ?>
 // menu.phpを読み込み
 ```
+読み込んだファイルで定義されているクラスや変数を、require_onceを記述したファイル内で使うことができる  
 ***

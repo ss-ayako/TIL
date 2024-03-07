@@ -91,11 +91,15 @@ phpコードが埋め込まれている例
 ```
 HTML内にPHPコードを埋め込む場合、PHPコードが実行される位置に<?phpと?>で挟まれたタグが必要  
 ***
-```// 配列の中に上記の4つのインスタンスを順に入れて、変数$menusに代入してください
-$menus=array($juice,$coffee,$curry,$pasta);```
+```
+// 配列の中に上記の4つのインスタンスを順に入れて、変数$menusに代入してください
+$menus=array($juice,$coffee,$curry,$pasta);
+```
 ***
-``` <!-- 配列$menusの要素を変数$menuとするforeach文を書いてください -->
+```
+<!-- 配列$menusの要素を変数$menuとするforeach文を書いてください -->
      <?php foreach ($menus as $menu):?> 
      <h3><?php echo $menu->name ?></h3>
-     <?php endforeach ?>```
+     <?php endforeach ?>
+```
 ***

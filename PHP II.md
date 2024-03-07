@@ -117,3 +117,24 @@ echoをしないとphpの処理の結果が出力
 <img src="<?php echo $menu->image?>">
 ```
 ***
+Menuクラスに、・$price・$imageというプロパティを定義  
+コンストラクタでプロパティの値をセットできるように,引数に$price, $imageを追加  
+```
+<?php
+class Menu {
+  public $name;
+  // $priceというプロパティを定義してください
+  public $price;
+  // $imageというプロパティを定義してください
+   public $image;
+  
+  // コンストラクタの引数に$price, $imageを追加してください
+  public function __construct($name, $price, $image) {
+    $this->name = $name;
+    $this->price = $price;
+    $this->image = $image;
+   }
+}
+?>
+```
+***

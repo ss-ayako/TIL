@@ -347,7 +347,7 @@ $juice->setOrderCount(2);
         <?php endforeach ?>
       </div>
       <!-- <input>タグを用いて送信ボタンを作成してください  -->
-      ###<input type ="submit" value ="注文する">
+      **<input type ="submit" value ="注文する">**
       <!--foreach文の外で、
 ・<input>タグを作成してください。
 ・type属性に「submit」を指定してください。

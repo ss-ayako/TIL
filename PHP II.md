@@ -335,7 +335,7 @@ $juice->setOrderCount(2);
             <p class="price">¥<?php echo $menu->getTaxIncludedPrice() ?>（税込）</p>
             
             <!-- <input>タグを用いて入力ボックスを作成してください  -->
-            ###<input type ="text" name ="<?php echo $menu->getName() ?>" value =0>
+###<input type ="text" name ="<?php echo $menu->getName() ?>" value =0>
              <!--foreach文の中で、
 ・<input>タグを作成してください。
 ・type属性に「text」を指定してください。

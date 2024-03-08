@@ -205,4 +205,48 @@ return floor(priceプロパティ * 1.08);
 その人に使ってほしい機能（料金を取得する機能）は公開し、クラスの外で使ってほしくない機能（料金を直接変更する機能）は隠す。  
 使える機能を制限することで他の人はどの機能を使えばいいかが分かりやすく、また、安全にクラスを利用することができる。  
 ***
+```
+<?php
+class Menu {
+  // name, price, imageプロパティのアクセス権をprivateにしてください
+  private $name;  // 変更前 public $name;
+  private $price; // 変更前 public $price;
+  private $image; // 変更前 public $image;
+  
+  public function __construct($name, $price, $image) {
+    $this->name = $name;
+    $this->price = $price;
+    $this->image = $image;
+  }
+  //プロパティのアクセス権をprivateにすると
+  //プロパティの値をクラスの外から取り出すことができない。
+  //プロパティの値を返すだけのメソッドを定義する。
+  
+  //プロパティの値を返すだけのメソッドを特に「ゲッター」
+  //ゲッターは「getプロパティ名」のように命名
+  
+  // getNameメソッドを定義してください
+  public function getName() {
+    return $this->name;
+  }
+  
+  // getImageメソッドを定義してください
+  public function getImage() {
+    return $this->image;
+  }
+  
+  public function getTaxIncludedPrice() {
+    return floor($this->price * 1.08);
+  }
+  
+}
+?>
 
+
+
+//imageプロパティのゲッターを用いて以下を書き換えてください -->
+          <img src="<?php echo $menu->getImage(); ?>" class="menu-item-image">
+//nameプロパティのゲッターを用いて以下を書き換えてください -->
+          <h3 class="menu-item-name"><?php echo $menu->getName(); ?></h3>
+```
+```

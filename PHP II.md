@@ -255,3 +255,51 @@ class Menu {
 ロパティの値を変更するメソッドを特に「セッター」  
 セッターは「setプロパティ名」のように命名  
 ***
+```
+<?php
+class Menu {
+  private $name;
+  private $price;
+  private $image;
+  // 1.$orderCountというプロパティを定義してください。ただし、初期値を数値の0としてください。
+  private $orderCount = 0; 
+  
+  public function __construct($name, $price, $image) {
+    $this->name = $name;
+    $this->price = $price;
+    $this->image = $image;
+  }
+  
+  public function getName() {
+    return $this->name;
+  }
+  
+  public function getImage() {
+    return $this->image;
+  }
+  
+  // 2.getOrderCountメソッドを定義してください
+  public function getOrderCount() {
+    return $this->orderCount;
+  }
+  
+  // 3.setOrderCountメソッドを定義してください
+   public function setOrderCount($orderCount) {
+    $this->orderCount = $orderCount;
+  }
+  
+  public function getTaxIncludedPrice() {
+    return floor($this->price * 1.08);
+  }
+  
+}
+?>
+
+
+// $juiceに対して数値の2を引数としてsetOrderCountメソッドを呼び出してください
+$juice->setOrderCount(2);
+
+// $menuのゲッターを用いてorderCountプロパティを表示してください -->
+  <p>注文数: <?php echo $menu->getOrderCount() ?></p>
+```
+***

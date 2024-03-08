@@ -261,6 +261,8 @@ class Menu {
   private $name;
   private $price;
   private $image;
+
+
   // 1.$orderCountというプロパティを定義してください。ただし、初期値を数値の0としてください。
   private $orderCount = 0; 
   

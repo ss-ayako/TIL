@@ -321,7 +321,7 @@ $juice->setOrderCount(2);
     <h1 class="logo">Café Progate</h1>
     
     <!-- ここに<form>の開始タグを書いてください -->
-    ### <form method="post" action="confirm.php">
+### <form method="post" action="confirm.php">
      <!-- ・<form>タグを作成してください。
 ・action属性をconfirm.phpに指定してください。
 ・method属性をpostに指定してください。
@@ -347,7 +347,7 @@ $juice->setOrderCount(2);
         <?php endforeach ?>
       </div>
       <!-- <input>タグを用いて送信ボタンを作成してください  -->
-      ### <input type ="submit" value ="注文する">
+### <input type ="submit" value ="注文する">
       <!--foreach文の外で、
 ・<input>タグを作成してください。
 ・type属性に「submit」を指定してください。

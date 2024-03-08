@@ -321,7 +321,7 @@ $juice->setOrderCount(2);
     <h1 class="logo">Café Progate</h1>
     
     <!-- ここに<form>の開始タグを書いてください -->
-### <form method="post" action="confirm.php">
+**<form method="post" action="confirm.php">**
      <!-- ・<form>タグを作成してください。
 ・action属性をconfirm.phpに指定してください。
 ・method属性をpostに指定してください。
@@ -335,7 +335,7 @@ $juice->setOrderCount(2);
             <p class="price">¥<?php echo $menu->getTaxIncludedPrice() ?>（税込）</p>
             
             <!-- <input>タグを用いて入力ボックスを作成してください  -->
-### <input type ="text" name ="<?php echo $menu->getName() ?>" value =0>
+**<input type ="text" name ="<?php echo $menu->getName() ?>" value =0>**
              <!--foreach文の中で、
 ・<input>タグを作成してください。
 ・type属性に「text」を指定してください。
@@ -347,7 +347,7 @@ $juice->setOrderCount(2);
         <?php endforeach ?>
       </div>
       <!-- <input>タグを用いて送信ボタンを作成してください  -->
-### <input type ="submit" value ="注文する">
+**<input type ="submit" value ="注文する">**
       <!--foreach文の外で、
 ・<input>タグを作成してください。
 ・type属性に「submit」を指定してください。

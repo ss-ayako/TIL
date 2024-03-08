@@ -377,13 +377,13 @@ $juice->setOrderCount(2);
     <h2>注文内容確認</h2>
     <?php foreach ($menus as $menu): ?>
       <!-- 変数$orderCountに$_POSTで受け取った値を代入してください -->
-      <?php $orderCount = $_POST[$menu->getName()] ?>
+      <?php $orderCount = $_POST[$menu->getName()] ?>nameってあるけど個数。ここで定義したものを
       <p class="order-amount">
         <!-- ここに、$menuのゲッターを用いてnameプロパティを表示してください -->
         <?php echo $menu->getName() ?>
         x
         <!-- ここに、$orderCountを表示してください -->
-        <?php echo $orderCount ?>
+        <?php echo $orderCount ?>ここで呼び出し
         個
       </p>
     <?php endforeach ?>

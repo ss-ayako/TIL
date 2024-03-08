@@ -249,4 +249,3 @@ class Menu {
 //nameプロパティのゲッターを用いて以下を書き換えてください -->
           <h3 class="menu-item-name"><?php echo $menu->getName(); ?></h3>
 ```
-```

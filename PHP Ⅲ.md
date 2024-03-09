@@ -25,3 +25,19 @@ $countのアクセス権をprivateに
 $countのゲッターのように、個々のインスタンスのデータに関係ない処理を行いたい時には「クラスメソッド」を使う  
 クラスメソッドは「static」を用いて定義、「クラス名::クラスメソッド名」  
 ***
+```
+// クラスプロパティ$countのアクセス権をprivateに、初期値を数値の0にしてください
+  private static $count = 0;
+
+// クラスプロパティcountの値に1を足してください
+    self ::$count++;
+
+// getCountというクラスメソッドを追加してください
+  public static function getCount(){
+     return self::$count;
+  }
+
+<!-- Menuクラスに対してgetCountメソッドを呼び出して、クラスプロパティ$countを表示してください -->
+    <h3>メニュー<?php echo Menu::getCount() ?>品</h3>
+```
+***

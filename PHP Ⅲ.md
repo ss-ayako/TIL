@@ -66,5 +66,8 @@ class Drink extends Menu { //クラスの継承。Drink クラスが Menu クラ
 }
 
 ?>
+
+<!-- $menuのゲッターを用いてtypeプロパティを表示してください -->
+            <p class="menu-item-type"><?php echo $menu->getType()?></p>
 ```
 ***

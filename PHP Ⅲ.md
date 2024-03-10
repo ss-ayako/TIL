@@ -50,7 +50,7 @@ $countのゲッターのように、個々のインスタンスのデータに�
 <?php 
 require_once('menu.php');
 
-class Drink extends Menu { //ここでクラスの継承を表しています。Drink クラスが Menu クラスを継承している
+class Drink extends Menu { //クラスの継承。Drink クラスが Menu クラスを継承。
   // $typeというprivateなプロパティを定義してください
   private $type;
   

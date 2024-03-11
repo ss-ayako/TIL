@@ -74,3 +74,10 @@ class Drink extends Menu { //クラスの継承。Drink クラスが Menu クラ
 インスタンスがDrinkクラスのものである時だけgetTypeメソッドを呼ぶ  
 「インスタンス instanceof クラス名」  
 インスタンスが指定したクラスのインスタンスである場合「true」、そうでない場合「false」  
+```
+ <!-- if文を用いて、$menuがDrinkクラスのインスタンスである時だけgetTypeメソッドを呼び出すようにしてください -->
+            <?php if ($menu instanceof Drink): ?>
+              <p class="menu-item-type"><?php echo $menu->getType() ?></p>
+            <?php endif ?>
+```
+

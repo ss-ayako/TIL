@@ -14,9 +14,9 @@ URLの末尾の「?」以降に「キー名=値」の形で簡単な情報をの
 ```<a href="show.php?name=<?php echo $menu->getName() ?>">```
 
 <a> タグ: ハイパーリンク。指定された URL に移動  
-href="show.php?name=<?php echo $menu->getName() ?>": href 属性には、リンク先の URL が指定。ここでは PHP コードを埋め込んでおり、動的なデータを含む URL を生成。  
+href="show.php?name=<?php echo $menu->getName() ?>": href 属性には、リンク先の URL が指定。動的なデータを含む URL を生成。  
 show.php: リンク先のページのファイル名が show.php 。  
-?name=<?php echo $menu->getName() ?>: クエリ文字列。? 以降にキーと値がセットに. name というキーに、$menu->getName() で得られるメニューの名前が設定。  
-<?php echo $menu->getName() ?>: PHPコードを埋め込んで、動的にメニューの名前を取得。これにより、リンク先のページで特定のメニューの詳細を表示する際に、そのメニューの名前を引き継ぐ。  
+?name=<?php echo $menu->getName() ?>: クエリ文字列。? 以降にキーと値がセットに. name というキーに、$menu->getName() で得たメニューの名前が設定。  
+<?php echo $menu->getName() ?>: PHPコードを埋め込み、動的にメニューの名前を取得。リンク先のページで特定のメニューの詳細を表示する際、そのメニューの名前引き継ぐ。  
 ***
 

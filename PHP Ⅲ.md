@@ -80,4 +80,7 @@ class Drink extends Menu { //クラスの継承。Drink クラスが Menu クラ
               <p class="menu-item-type"><?php echo $menu->getType() ?></p>
             <?php endif ?>
 ```
+__constructメソッドは親クラスですでに定義されている。  
+同じ名前のメソッドを子クラスで定義するとメソッドの中身を上書きすることができる。  
+このようなメソッドの上書きを「オーバーライド」  
 

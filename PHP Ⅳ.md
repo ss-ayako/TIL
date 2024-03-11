@@ -19,4 +19,13 @@ show.php: リンク先のページのファイル名が show.php 。
 ?name=<?php echo $menu->getName() ?>: クエリ文字列。? 以降にキーと値がセット. name キーに、$menu->getName() で得たメニューの名前が設定。  
 <?php echo $menu->getName() ?>: 動的にメニューの名前を取得。リンク先のページで特定のメニューの詳細を表示する際、そのメニューの名前引き継ぐ。  
 ***
+nameプロパティの値を用いて、配列$menusから特定のMenuインスタンスを取得するクラスメソッド（findByNameメソッド）を作成  
 
+```// findByNameというクラスメソッドを定義してください
+  public static function findByName($menus,$name){  //配列$menusと、検索するメニュー名 $name を受け取り
+    foreach($menus as $menu)    //配列$menus の各要素が順番に $name に代入
+    if($menu->getName()==$name){   //$menuのnameプロパティと引数の$nameを比較して、同じ値なら
+      return $menu;   //その$menuをreturn
+    }
+  }
+```

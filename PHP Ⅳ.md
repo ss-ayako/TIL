@@ -86,3 +86,13 @@ $reviews = array($review1,$review2)
 ?>
 ```
 ***
+```
+<!-- foreach文を書いてください -->
+        <?php foreach($reviews as $review): ?>
+  　<h3><?php echo $review->getMenuName() ?></h3>
+  　<!--<h3>タグを用意して、その中に$reviewのmenuNameプロパティを表示-->
+  　<p><?php echo $review->getBody() ?></p>
+  　<!--<p>タグを用意して、その中に$reviewのbodyプロパティを表示-->
+<?php endforeach ?>
+```
+***

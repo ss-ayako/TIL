@@ -28,4 +28,8 @@ nameプロパティの値を用いて、配列$menusから特定のMenuインス
       return $menu;   //その$menuをreturn
     }
   }
+
+
+// Menuクラスに対してfindByNameというクラスメソッドを呼び出してください
+$menu = Menu::findByName($menus,$menuName);
 ```

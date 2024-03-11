@@ -70,12 +70,12 @@ $pasta = new Food('PASTA', 1200, 'https://s3-ap-northeast-1.amazonaws.com/progat
 $menus = array($juice, $coffee, $curry, $pasta);
 //2つのReviewクラスのインスタンスを生成して、変数$review1, 変数$review2に代入
 // 変数$review1にReviewクラスのインスタンスを代入してください
-$review1 = new Review($juice->getName,"果肉たっぷりのオレンジジュースです！");
+$review1 = new Review($juice->getName(),"果肉たっぷりのオレンジジュースです！");
 //$review1
 //1つ目の引数: $juiceのnameプロパティ（ゲッターで取得する）
 //2つ目の引数: 果肉たっぷりのオレンジジュースです！
 // 変数$review2にReviewクラスのインスタンスを代入してください
-$review2 = new Review($curry->getName,"具がゴロゴロしていてとてもおいしいです");
+$review2 = new Review($curry->getName(),"具がゴロゴロしていてとてもおいしいです");
 //・$review2
 //1つ目の引数: $curryのnameプロパティ（ゲッターで取得する）
 //2つ目の引数: 具がゴロゴロしていてとてもおいしいです

@@ -92,3 +92,4 @@ __constructメソッドは親クラスですでに定義されている。
  // 親クラスのコンストラクタを呼び出してください
     parent::__construct($name, $price, $image);
 ```
+spicinessプロパティ $menu->getSpiciness()

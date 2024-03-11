@@ -33,3 +33,24 @@ nameプロパティの値を用いて、配列$menusから特定のMenuインス
 // Menuクラスに対してfindByNameというクラスメソッドを呼び出してください
 $menu = Menu::findByName($menus,$menuName);
 ```
+***
+```
+<?php
+// Reviewクラスを定義してください
+class Review {
+private $menuName;//プロパティを定義
+private $body;//プロパティを定義
+
+public function __construct($menuName,$body) { //コンストラクタを定義
+  $this->menuName = $menuName; //menuNameプロパティに引数の値をセット
+  $this->body = $body; //bodyプロパティに引数の値をセット
+}
+public function getMenuName() { //menuNameプロパティのゲッター（getMenuName）を定義
+  return $this->menuName;
+}
+public function getBody() { //menuNameプロパティのゲッター（getMenuName）を定義
+  return $this->body;
+}
+}
+?>
+```

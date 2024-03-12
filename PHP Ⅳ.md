@@ -113,3 +113,10 @@ $reviews = array($review1,$review2)
 $menuReviews=$menu->getReviews($reviews)
   ```
 ***
+```
+コンストラクタを定義するには、以下のようにします。
+ public function __construct(引数) {
+  $this->プロパティ = 引数;
+ }
+```
+***

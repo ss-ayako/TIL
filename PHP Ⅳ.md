@@ -120,3 +120,27 @@ $menuReviews=$menu->getReviews($reviews)
  }
 ```
 ***
+```
+<?php
+// Userクラスを定義してください
+class User {
+  private $name; //privateなプロパティを定義
+  private $gender; //privateなプロパティを定義
+  
+  public function __construct($name, $gender) {    //コンストラクタを定義
+    $this->name = $name;
+    $this->gender = $gender;
+    //引数を$name, $genderとする
+    //nameプロパティとgenderプロパティに引数の値をセットする
+  }
+
+  //クラス内のプロパティの値を外部から取得するためゲッター定義する
+  public function getName() { //nameプロパティのゲッター（getName）を定義
+ return $this->name;
+ }
+  public function getGender() { //genderプロパティのゲッター（getGender）を定義
+ return $this->gender;
+ }
+}
+?>
+```

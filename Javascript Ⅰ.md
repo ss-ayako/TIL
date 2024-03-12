@@ -13,3 +13,18 @@ console.log (length * length * 3 );
 一度値を代入した変数に、その後再び値を代入すると、上書きされる
 「let」は必要なく 「変数名 = 新しい値」
 ***
+```
+let number = 7;
+console.log(number);
+
+// 変数numberの値に3を加えてください
+number=number+3;
+
+console.log(number);
+
+// 変数numberの値を2で割ってください
+number=number/2;
+
+console.log(number);
+```
+***

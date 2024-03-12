@@ -96,3 +96,20 @@ $reviews = array($review1,$review2)
 <?php endforeach ?>
 ```
 ***
+```
+// getReviewsメソッドを定義してください
+  public function getReviews($reviews) {  //getReviewsメソッドを定義,引数を$reviewsとする
+  $reviewsForMenu=array();  //変数$reviewsForMenuに空の配列を代入
+  foreach($reviews as $review){  //$reviewsの要素を変数$reviewとするforeach文
+  if($review->getMenuName()==$this->name){//$reviewのmenuNameプロパティと、インスタンス自身($this)のnameプロパティを比較
+  $reviewsForMenu[]=$review;  //trueであるなら、$reviewsForMenuに$reviewを追加
+  }
+  }
+  return $reviewsForMenu;  //foreach文が終了した後、$reviewsForMenuをreturn
+  }
+
+
+// $menuに対して$reviewsを引数としてgetReviewsメソッドを呼び出して、戻り値を変数$menuReviewsに代入してください
+$menuReviews=$menu->getReviews($reviews)
+  ```
+***

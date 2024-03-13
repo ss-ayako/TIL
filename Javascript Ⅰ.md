@@ -56,3 +56,5 @@ console.log(`ぼくの名前は${name}です`);
 console.log(`今は${age}歳です`);
 ```
 ***
+「a == b」はaとbが等しければtrue、等しくなければfalse  
+「a != b」はaとbが異なればtrue、等しくなければfalse  

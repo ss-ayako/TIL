@@ -29,6 +29,7 @@ number=number/2;
 console.log(number);
 ```
 ***
+# 定数
 ```
 // 定数languageを定義してください
 const language = "フランス語";

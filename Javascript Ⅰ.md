@@ -127,4 +127,23 @@ if(age>=20 && age<30){
 switch文の中にcaseを追加することで処理を分けることができる  
 breakがないと、合致したcaseの処理を行った後、その次のcaseの処理も実行してしまう  
 そのため、switch文を使うときにはbreakを忘れないようにする  
+const n = 2;
+
+switch (n) {
+  case 1:
+    console.log("大吉です");
+    break;
+
+  // nの値が2のcaseを追加してください
+  case 2:
+    console.log("吉です");
+    break;
+  
+  
+  // nの値が3のcaseを追加してください
+  case 3:
+    console.log("小吉です");
+    break;  
+}
+
 ***

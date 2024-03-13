@@ -147,5 +147,6 @@ switch (n) {
     break;  
 }
 ```
-caseのどれにも一致しなかった時、defaultのブロックが実行されます。defaultはif文のelseに似たようなもの
+caseのどれにも一致しなかった時、defaultのブロックが実行されます。defaultはif文のelseに似たようなもの  
+if, elseifによる分岐が多く複雑な場合、switch文で書き換えるとシンプルで読みやすいコードにできる  
 ***

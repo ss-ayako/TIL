@@ -149,4 +149,24 @@ switch (n) {
 ```
 caseのどれにも一致しなかった時、defaultのブロックが実行されます。defaultはif文のelseに似たようなもの  
 if, elseifによる分岐が多く複雑な場合、switch文で書き換えるとシンプルで読みやすいコードにできる  
+```
+const n = 4;
+
+switch (n) {
+  case 1:
+    console.log("大吉です");
+    break;
+  case 2:
+    console.log("吉です");
+    break;
+  case 3:
+    console.log("小吉です");
+    break;
+  // どのcaseにも合致しなかったときの処理を追加してください
+  default:
+  console.log("凶です");
+    break;
+
+}
+```
 ***

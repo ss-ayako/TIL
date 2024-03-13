@@ -56,7 +56,7 @@ console.log(`ぼくの名前は${name}です`);
 console.log(`今は${age}歳です`);
 ```
 ***
-　# 演算子 
+# 演算子 
 「a == b」はaとbが等しければtrue、等しくなければfalse  
 「a != b」はaとbが異なればtrue、等しくなければfalse  
 

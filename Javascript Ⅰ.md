@@ -126,7 +126,8 @@ if(age>=20 && age<30){
 ある値によって処理を分岐する場合  
 switch文の中にcaseを追加することで処理を分けることができる  
 breakがないと、合致したcaseの処理を行った後、その次のcaseの処理も実行してしまう  
-そのため、switch文を使うときにはbreakを忘れないようにする  
+そのため、switch文を使うときにはbreakを忘れないようにする 
+```
 const n = 2;
 
 switch (n) {
@@ -145,5 +146,6 @@ switch (n) {
     console.log("小吉です");
     break;  
 }
-
+```
+caseのどれにも一致しなかった時、defaultのブロックが実行されます。defaultはif文のelseに似たようなもの
 ***

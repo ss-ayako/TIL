@@ -58,3 +58,23 @@ console.log(`今は${age}歳です`);
 ***
 「a == b」はaとbが等しければtrue、等しくなければfalse  
 「a != b」はaとbが異なればtrue、等しくなければfalse  
+
+厳密等価演算子  
+「a === b」は厳密にaとbが等しければtrue、等しくなければfalse  
+「a !== b」は厳密にaとbが異なればtrue、等しくなければfalse  
+```
+const password = "ninjawanko";
+
+// passwordの値が"ninjawanko"の場合、「ログインに成功しました」と出力してください
+if(password=="ninjawanko"){
+  console.log("ログインに成功しました");
+}
+
+
+
+// passwordの値が"ninjawanko"でない場合、「パスワードが間違っています」と出力してください
+if(password!=="ninjawanko"){
+  console.log("パスワードが間違っています");
+}
+```
+***

@@ -18,7 +18,7 @@ while(number <= 100){
 while文以外にもfor文というものがある  
 できることはwhile文と同じ  
 while文に比べてシンプルに書くことができるのが特徴  
-***
+
 「number += 1」は「number ++」のように省略して書ける   
 「number -= 1」を「number --」と省略することができる  
 

@@ -46,3 +46,12 @@ for (let number = 1; number<=100 ;number+=1) {
 複数の値をまとめて管理するには、配列
 [値1, 値2, 値3] 
 配列に入っているそれぞれの値のことを要素
+```
+// 定数animalsに、指定された配列を代入してください
+const animals = ["dog","cat","sheep"];
+
+// 定数animalsを出力して下さい
+console.log(animals);
+```
+***
+

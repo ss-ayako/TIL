@@ -21,3 +21,11 @@ while文に比べてシンプルに書くことができるのが特徴
 ***
 「number += 1」は「number ++」のように省略して書ける   
 「number -= 1」を「number --」と省略することができる  
+
+```
+// for文を用いて、1から100までの数字を出力してください
+for(let number = 1; number <= 100; number ++){
+  console.log(number);
+}
+```
+***

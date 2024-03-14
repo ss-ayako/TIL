@@ -57,4 +57,14 @@ console.log(animals);
 # インデックス番号
 配列の要素にはそれぞれインデックス番号という番号がついている  
 インデックス番号は、0から始まる  
+```
+const animals = ["dog", "cat", "sheep"];
+
+// 配列の1つ目の要素を出力してください
+console.log(animals[0]);
+
+// 配列の3つ目の要素を出力してください
+console.log(animals[2]);
+```
+***
 

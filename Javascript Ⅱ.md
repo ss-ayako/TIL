@@ -105,4 +105,12 @@ for (let i = 0; i < animals.length; i++) {
 プロパティ間はコンマ（,）で区切る  
 
 オブジェクトも定数に代入することができる  
+```
 「console.log(定数名)」とすると、オブジェクトがコンソールに出力される  
+// 定数characterを定義し、指定されたオブジェクトを代入してください
+const character={name:"にんじゃわんこ",age:14};
+
+// characterの値を出力してください
+console.log(character);
+```
+

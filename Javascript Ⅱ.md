@@ -77,7 +77,7 @@ animals[2]="rabbit";
 
 // 配列animalsの3つ目の要素をコンソールに表示して下さい
 console.log(animals[2]);
-
+----
 
 const animals = ["dog", "cat", "sheep"];
 
@@ -85,7 +85,7 @@ const animals = ["dog", "cat", "sheep"];
 for(let i = 0;i <3;i++){
   console.log(animals[i]);
 }
-
+----
 
 const animals = ["dog", "cat", "sheep", "rabbit", "monkey", "tiger", "bear", "elephant"];
 

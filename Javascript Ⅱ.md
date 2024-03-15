@@ -68,4 +68,13 @@ console.log(animals[2]);
 ```
 ***
 # 定数
-配列自体を再度代入することはできない、配列の要素を更新することはできる
+配列自体を再度代入することはできない、配列の要素を更新することはできる  
+```
+const animals = ["dog", "cat", "sheep"];
+
+// 配列animalsの3つ目の要素を「rabbit」に更新してください
+animals[2]="rabbit";
+
+// 配列animalsの3つ目の要素をコンソールに表示して下さい
+console.log(animals[2]);
+```

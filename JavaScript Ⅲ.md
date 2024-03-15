@@ -32,4 +32,13 @@ console.log("私の名前は○○です");
 hello();
 ```
 # アロー関数  
+```
 「function()」の部分を「() =>」
+で表す  
+// 定数greetにアロー関数を代入してください
+const greet = ()=> {
+console.log("こんにちは！");
+};
+// 定数greetを呼び出してください
+greet();
+``

@@ -67,4 +67,5 @@ console.log(animals[0]);
 console.log(animals[2]);
 ```
 ***
-
+# 定数
+配列自体を再度代入することはできない、配列の要素を更新することはできる

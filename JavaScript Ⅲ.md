@@ -74,3 +74,15 @@ add(5,7);
 ***
 # 戻り値
 「return 値 」と書くことで、関数はその値を戻り値として返す
+```
+const half = (number) => {
+  // numberを2で割った値を戻り値として返してください
+  return (number/2);
+};
+
+// 定数resultを定義してください
+const result=half(130);
+
+// 「130の半分は〇〇です」となるように出力してください
+console.log(`130の半分は${result}です`);
+```

@@ -108,3 +108,5 @@ console.log(`年齢: ${animal.age}`);
 // animalに対してgreetメソッドを呼び出してください
 animal.greet();
 ```
+# メソッド内で値を使う
+「this.プロパティ名」  

@@ -89,4 +89,18 @@ console.log(`130の半分は${result}です`);
 if文で使うような条件式をreturnすると、
 その条件式の結果として得られる真偽値（trueまたはfalse）を返すことができる
 関数の処理を終了させる性質も持っています
-returnの後にある関数内の処理は実行されない  
+returnの後にある関数内の処理は実行されない
+```
+const check = (number) => {
+  // numberが3の倍数かどうかを戻り値として返してください
+  return number %3 ===0;
+  
+};
+
+// if文の条件式で、checkを呼び出してください
+if (check(123)) {
+  console.log("3の倍数です");
+} else {
+  console.log("3の倍数ではありません");
+}
+```

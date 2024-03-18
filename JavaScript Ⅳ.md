@@ -30,3 +30,4 @@ const animal = new Animal ();
 // 定数animalの値を出力してください
 console.log (animal);
 ```
+# 設計図に設定を追加する  

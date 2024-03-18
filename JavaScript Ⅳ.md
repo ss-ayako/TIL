@@ -137,6 +137,7 @@ animal.info();
 ```
 # メソッド内で他のメソッドを呼び出す  
 メソッド内で 「this.メソッド名()」  
+infoメソッドの中で、Animalクラスのgreetメソッドを呼び出し  
 ```
 class Animal {
   constructor(name, age) {

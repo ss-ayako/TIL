@@ -3,4 +3,16 @@
 定数名.プロパティ名で取得  
 ブジェクトの「値」の部分には、関数を用いることもできる  
 プロパティの値として関数を記述。その関数を呼び出すには、「定数名.プロパティ名()」  
+```
+// 定数animalを定義してください
+const animal = {name:"レオ",age:3,greet:() => {
+    console.log("こんにちは");
+  }
+};
 
+// animalのnameプロパティの値を出力してください
+console.log(animal.name);
+
+// animalのgreetプロパティの関数を実行してください
+animal.greet();
+```

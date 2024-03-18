@@ -135,3 +135,4 @@ animal.greet();
 // animalに対してinfoメソッドを呼び出してください
 animal.info();
 ```
+# メソッド内で他のメソッドを呼び出す  

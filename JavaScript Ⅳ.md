@@ -164,7 +164,7 @@ const animal = new Animal("レオ", 3);
 animal.info();
 ```
 # クラスの継承  
-すでにあるクラスをもとに、新しくクラスを作成する方法のこと
+すでにあるクラスをもとに、新しくクラスを作成する方法のこと  
 「Animalクラス」を継承して「Dogクラス」を作成する  「class Dog extends Animal」  
 ```
 class Animal {

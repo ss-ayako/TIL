@@ -44,3 +44,5 @@ class Animal {
 }
 const animal = new Animal();
 ```
+コンストラクタの中で「this.プロパティ名 = 値」
+生成されたインスタンスにプロパティと値を追加することができる  

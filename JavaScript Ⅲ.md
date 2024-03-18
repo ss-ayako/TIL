@@ -132,3 +132,4 @@ console.log(name);
 にんじゃわんこ  
 ひつじ仙人  
 出力される  
+# 時間を分に換算するtoMinutes関数  

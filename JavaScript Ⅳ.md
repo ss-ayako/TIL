@@ -18,3 +18,4 @@ console.log(animal.name);
 // animalのgreetプロパティの関数を実行してください
 animal.greet();
 ```
+クラスからオブジェクトを生成するには 「new クラス名()」

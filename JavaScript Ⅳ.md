@@ -31,3 +31,4 @@ const animal = new Animal ();
 console.log (animal);
 ```
 # 設計図に設定を追加する  
+コンストラクタ インスタンスを生成するときに実行したい処理や設定を追加するための機能  

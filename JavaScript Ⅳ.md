@@ -35,3 +35,12 @@ console.log (animal);
 クラスの中括弧 { } 内に 「constructor() { }」 と記述  
 ここに書いた処理はインスタンスが生成された直後に実行  
 インスタンスごとに毎回実行される
+```
+class Animal {
+  // コンストラクタを追加してください
+  constructor(){
+  console.log("インスタンスを生成しました");
+}
+}
+const animal = new Animal();
+```

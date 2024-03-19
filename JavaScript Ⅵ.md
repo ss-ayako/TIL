@@ -30,3 +30,4 @@ characters.forEach ( (character)=> {
   console.log(character);
 } );
 ```
+# findメソッド 条件式に合う1つ目の要素を配列の中から取り出すメソッド  

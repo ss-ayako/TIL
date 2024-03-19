@@ -8,3 +8,10 @@ characters.push("とりずきん");
 # forEachメソッド 配列の中の要素を1つずつ取り出して、全ての要素に繰り返し同じ処理  
 forEachメソッドの引数には、学習Ⅲで学んだアロー関数が入ってる  
 配列内の要素が1つずつ順番にアロー関数の引数に代入され、処理が繰り返し実行  
+配列.forEach((引数）
+```
+const characters = ["にんじゃわんこ", "ベイビーわんこ", "ひつじ仙人", "とりずきん"];
+
+// forEachメソッドを使って、配列charactersの中身をすべて出力してください
+characters.forEach ( (character)=> {console.log(character);} );
+```

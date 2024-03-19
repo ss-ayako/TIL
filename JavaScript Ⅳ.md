@@ -267,3 +267,4 @@ class Dog extends Animal {
   }
 }
 ```
+# コンストラクタのオーバーライド

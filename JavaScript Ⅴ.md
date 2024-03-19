@@ -62,3 +62,8 @@ class Dog extends Animal {
 export default Dog;
 ```
 ***
+# 値のエクスポート  
+文字列や数値や関数もエクスポート可能  
+エクスポートする際は「export default 定数名;」  
+インポートする際は「import 定数名 from "./ファイル名";」  
+

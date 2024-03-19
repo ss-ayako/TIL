@@ -15,3 +15,6 @@ const characters = ["にんじゃわんこ", "ベイビーわんこ", "ひつじ
 // forEachメソッドを使って、配列charactersの中身をすべて出力してください
 characters.forEach ( (character)=> {console.log(character);} );
 ```
+配列charactersの要素が1つずつ順番に  
+引数characterに代入され、  
+処理内に書いてあるconsole.log(character)が繰り返し実行  

@@ -18,3 +18,4 @@ characters.forEach ( (character)=> {console.log(character);} );
 配列charactersの要素が1つずつ順番に  
 引数characterに代入され、  
 処理内に書いてあるconsole.log(character)が繰り返し実行  
+引数に入っている関数はコールバック関数と呼ぶ　 (character)=> {console.log(character);} 

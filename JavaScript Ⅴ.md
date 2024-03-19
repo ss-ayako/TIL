@@ -111,3 +111,4 @@ console.log("---------");
 dog2.info();
 console.log("---------");
 ```
+# 相対パス  

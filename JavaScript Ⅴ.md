@@ -113,6 +113,9 @@ console.log("---------");
 ```
 # 相対パス  
 「./」 同じディレクトリ  
+```
+import { dog1, dog2 } from "./data/dogData";
+```
 「../」 1つ上の階層に戻る  
 ```
 import Dog from "../class/dog";

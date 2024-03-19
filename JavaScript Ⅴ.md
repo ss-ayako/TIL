@@ -66,4 +66,12 @@ export default Dog;
 文字列や数値や関数もエクスポート可能  
 エクスポートする際は「export default 定数名;」  
 インポートする際は「import 定数名 from "./ファイル名";」  
+```
+// Dogクラスのインポートと定数dogを以下に張り付けてください
+import Dog from "./dog";
 
+const dog = new Dog("レオ", 4, "チワワ");
+
+// 定数dogをエクスポートしてください
+export default dog;
+```

@@ -35,3 +35,31 @@ characters.forEach ( (character)=> {
 コールバック関数の中は { return 条件 }   
 条件に合う要素が戻り値  
 条件に合う要素が見つかった時に終了.条件に合う最初の1つの要素のみ  
+```
+const numbers = [1, 3, 5, 7, 9];
+
+// findメソッドを使って配列numbersから3の倍数を見つけ、定数foundNumberに代入してください
+const foundNumber = numbers.find((number) => {
+  return number%3===0;
+});
+
+// foundNumberを出力してください
+console.log(foundNumber);
+
+
+const characters = [  // オブジェクトの配列characters
+
+  {id: 1, name: "にんじゃわんこ", age: 6},
+  {id: 2, name: "ベイビーわんこ", age: 2},
+  {id: 3, name: "ひつじ仙人", age: 100},
+  {id: 4, name: "とりずきん", age: 21}
+];
+
+// 定数charactersからidが3のオブジェクトを見つけ、定数foundCharacterに代入してください
+const foundCharacter = characters.find((character) => { //定数foundCharacterに代入
+  return character.id===3; //処理: character.idが3のときにtrueをreturn
+});
+
+// foundCharacterを出力してください
+console.log(foundCharacter);
+```

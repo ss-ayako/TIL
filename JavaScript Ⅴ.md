@@ -67,6 +67,7 @@ export default Dog;
 エクスポートする際は「export default 定数名;」  
 インポートする際は「import 定数名 from "./ファイル名";」  
 ```
+「script.js」から「dogData.js」にdogインスタンスを定義する部分を移動
 // Dogクラスのインポートと定数dogを以下に張り付けてください
 import Dog from "./dog";
 

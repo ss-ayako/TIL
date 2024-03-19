@@ -19,3 +19,14 @@ characters.forEach ( (character)=> {console.log(character);} );
 引数characterに代入され、  
 処理内に書いてあるconsole.log(character)が繰り返し実行  
 引数に入っている関数はコールバック関数と呼ぶ　 (character)=> {console.log(character);} 
+
+長くなるので見やすく{
+で改行する　こんな風に
+```
+const characters = ["にんじゃわんこ", "ベイビーわんこ", "ひつじ仙人", "とりずきん"];
+
+// forEachメソッドを使って、配列charactersの中身をすべて出力してください
+characters.forEach ( (character)=> {
+  console.log(character);
+} );
+```

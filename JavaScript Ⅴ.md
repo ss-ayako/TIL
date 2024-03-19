@@ -120,3 +120,7 @@ import { dog1, dog2 } from "./data/dogData";
 ```
 import Dog from "../class/dog";
 ```
+# パッケージ
+誰かが作った便利なプログラムがパッケージという形で公開されてる  
+パッケージを自分のプログラムで使うためには、importを用いてパッケージをインポート  
+# readline-sync

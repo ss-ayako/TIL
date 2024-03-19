@@ -89,3 +89,25 @@ export default dog;
 # 1つのファイルから複数のエクスポート  
 エクスポート 「export { 名前1, 名前2 }」  
 インポート 「import { 値の名前,値の名前 } from "./ファイル名"」  
+```
+import Dog from "./dog";
+
+// 定数dog1, dog2を確認してください
+const dog1 = new Dog("レオ", 4, "チワワ");
+const dog2 = new Dog("ベン", 2, "プードル");
+
+// 以下を書き換えて、定数dog1, dog2をエクスポートしてください
+//1つのファイルから複数のエクスポート
+export {dog1,dog2};
+
+
+// 以下を書き換えて、定数dog1, dog2をインポートしてください
+import { dog1, dog2 } from "./dogData";
+
+// 定数dog1とdog2を出力するように左からコピーして書き換えてください
+console.log("---------");
+dog1.info();
+console.log("---------");
+dog2.info();
+console.log("---------");
+```

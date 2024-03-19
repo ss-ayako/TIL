@@ -128,7 +128,7 @@ import Dog from "../class/dog";
 入力された値は、定数や変数に代入することが出来る  
 年齢のように整数を入力してほしい場合はquestionIntを用いる  
 const 定数 = readline-sync.questionInt("年齢入れてください"）;  
-あとは入力値を用いて、Dogのインスタンスを生成すれば完成  
+あとは入力値を用いて,インスタンスを生成,完成  
 ```
 // readline-syncをインポートしてください
 import readlineSync from "readline-sync";

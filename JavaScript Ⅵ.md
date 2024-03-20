@@ -93,3 +93,4 @@ const underTwenty = characters.filter((character)=>{
 // underTwentyを出力してください
 console.log(underTwenty);
 ```
+# mapメソッド　配列内のすべての要素に処理を行い、その戻り値から新しい配列を作成するメソッド

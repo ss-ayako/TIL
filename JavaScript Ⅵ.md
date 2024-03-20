@@ -67,6 +67,7 @@ console.log(foundCharacter);
 # filterメソッド 記述した条件に合う要素全てを取り出して新しい配列を作成するメソッド
 配列の要素がオブジェクトの場合も使うことができる
 
+```
 const numbers = [1, 2, 3, 4];
 
 // filterメソッドを使ってnumbersから偶数を取り出し、定数evenNumbersに代入してください
@@ -91,3 +92,4 @@ const underTwenty = characters.filter((character)=>{
 
 // underTwentyを出力してください
 console.log(underTwenty);
+```

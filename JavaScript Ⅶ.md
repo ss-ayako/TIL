@@ -1,4 +1,4 @@
-# コールバック関数  
+# コールバック関数  引数として渡される関数
 ```
 const printWanko = () => {
   console.log("にんじゃわんこ");
@@ -17,3 +17,4 @@ const call = (callback) => {
 call(printHitsuji);
 ```
 他の関数に引数として渡される関数をコールバック関数という  
+JavaScriptでは引数に関数を渡すことができる

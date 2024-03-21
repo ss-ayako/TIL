@@ -35,3 +35,4 @@ const call = (callback) => {
 // 関数printWankoを引数に渡して関数callを実行してください
 call(printWanko);
 ```
+事前に定義した関数をコールバック関数として渡した,関数を直接引数の中で定義することもできる  

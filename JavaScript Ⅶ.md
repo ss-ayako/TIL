@@ -16,3 +16,4 @@ const call = (callback) => {
 // 引数をprintHitsujiに書き換えて出力を確認しましょう
 call(printHitsuji);
 ```
+他の関数に引数として渡される関数をコールバック関数という  

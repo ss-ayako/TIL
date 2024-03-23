@@ -13,5 +13,11 @@ SELECT カラム名
 FROM テーブル名  
 クエリの終わりにはセミコロン  
 ***
+```
+-- purchasesテーブルから、priceカラムのデータを取得してください
 
+SELECT price
+FROM purchases;
+```
+***
 

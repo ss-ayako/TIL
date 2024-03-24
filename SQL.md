@@ -23,4 +23,8 @@ FROM purchases;
 ***
 複数のカラムからデータを取得　　
 SELECT カラム名、カラム名  
-全カラムのデータを取得する場合は「＊」の記号  
+```SELECT name,price
+FROM purchases;```  
+全カラムのデータを取得する場合は「＊」の記号
+```SELECT * 
+FROM purchases;```  

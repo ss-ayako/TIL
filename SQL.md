@@ -21,4 +21,6 @@ SELECT price
 FROM purchases;
 ```
 ***
+複数のカラムからデータを取得　　
+SELECT カラム名、カラム名  
 

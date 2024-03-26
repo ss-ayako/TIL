@@ -32,4 +32,16 @@ FROM purchases;
 ```
 SELECT * 
 FROM purchases;
-```  
+```
+
+WHEREを用いて、数値データを条件に取得
+```
+SELECT *
+FROM purchases
+WHERE purchased_at = '2017-07-01';
+```
+
+# データ型
+テキストデータ,数値データ、日付データ  
+「テキストデータ,日付データ」はダブルクォーテーションまたはシングルクォーテーションで囲む必要がある  
+

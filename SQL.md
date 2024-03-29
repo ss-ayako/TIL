@@ -56,3 +56,8 @@ WHERE name LIKE 文字列;
 ```
 WHERE name LIKE "%文字列%";
 ```
+# 前方一致  
+「〇〇%」とした場合、「〇〇」以降はどんな文字列にも一致  
+```
+WHERE name LIKE "%文字列%";
+```

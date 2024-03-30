@@ -68,3 +68,21 @@ WHERE name LIKE "文字列%";
 ```
 WHERE name LIKE "%文字列";
 ```
+# NOT演算子  
+「〇〇を含まないデータ」や「〇〇に一致しないデータ」のような条件  
+```
+WHERE NOT name LIKE "%文字列%";
+WHERE NOT price > 1000;
+
+//character_nameカラムが「にんじゃわんこ」でないデータを取得してください
+
+SELECT *
+FROM purchases
+WHERE NOT character_name = "にんじゃわんこ";
+
+//nameカラムが「プリン」を含まないデータを取得してください
+
+SELECT *
+FROM purchases
+WHERE NOT name LIKE "%プリン%";  
+```

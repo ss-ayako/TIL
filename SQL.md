@@ -86,3 +86,15 @@ SELECT *
 FROM purchases
 WHERE NOT name LIKE "%プリン%";  
 ```
+# NULL  
+中身が何かわからない  
+なんのデータも保存されていない  
+# NULLのデータを取得  
+```
+WHERE price IS NULL;
+```
+# NULLではないデータを取得  
+```
+WHERE price IS NOT NULL;
+```
+「IS NOT NULL」も「IS NULL」と同様に、「カラム名 IS NOT NULL」のようにして使う  

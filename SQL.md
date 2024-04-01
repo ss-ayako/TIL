@@ -98,3 +98,10 @@ WHERE price IS NULL;
 WHERE price IS NOT NULL;
 ```
 「IS NOT NULL」も「IS NULL」と同様に、「カラム名 IS NOT NULL」のようにして使う  
+# NOT演算子  
+「〇〇を含まないデータ」や「〇〇に一致しないデータ」  
+```
+WHERE NOT price > 1000;        //1000より大きい
+WHERE NOT name LIKE "%プリン%";  //プリンを含まない
+WHERE NOT character_name = "にんじゃわんこ";　　//にんじゃわんこではない
+```

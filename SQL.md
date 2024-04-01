@@ -124,4 +124,7 @@ categoryカラムが「食費」またはcharacter_nameカラムが「にんじ�
 # ORDER BY  
 SQLでは「昇順」は「ASC」、「降順」は「DESC」と指定  
 ORDER BY 「並べ替えたいカラム名」 「並べ方」  
-
+```
+ORDER BY price DESC;
+```
+「ORDER BY」は「WHERE」と併用することが可能  

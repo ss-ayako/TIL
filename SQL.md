@@ -127,4 +127,10 @@ ORDER BY 「並べ替えたいカラム名」 「並べ方」
 ```
 ORDER BY price DESC;
 ```
+priceカラムを基準に降順に  
+
+# LIMIT  
+「最大で何件取得するか」を指定  
+LIMIT  データの件数;  
+
 「ORDER BY」は「WHERE」と併用することが可能  

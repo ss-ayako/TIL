@@ -121,3 +121,7 @@ WHERE category = "食費"
 OR character_name = "にんじゃわんこ";
 ```
 categoryカラムが「食費」またはcharacter_nameカラムが「にんじゃわんこ」であるデータ  
+# ORDER BY  
+SQLでは「昇順」は「ASC」、「降順」は「DESC」と指定  
+ORDER BY 「並べ替えたいカラム名」 「並べ方」  
+

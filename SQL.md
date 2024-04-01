@@ -105,3 +105,19 @@ WHERE NOT price > 1000;        //1000より大きい
 WHERE NOT name LIKE "%プリン%";  //プリンを含まない
 WHERE NOT character_name = "にんじゃわんこ";　　//にんじゃわんこではない
 ```
+# AND演算子  
+WHEREに複数の条件を指定することができる  
+「WHERE 条件１ AND 条件２」 条件１と条件２を共に満たすデータを検索  
+```
+WHERE category = "食費"
+AND character_name = "ひつじ仙人";
+```
+categoryカラムが「食費」かつcharacter_nameカラムが「ひつじ仙人」であるデータ  
+
+# OR演算子  
+「WHERE 条件１ OR 条件２」 条件１または条件２のどちらかを満たすデータを検索 
+```
+WHERE category = "食費"
+OR character_name = "にんじゃわんこ";
+```
+categoryカラムが「食費」またはcharacter_nameカラムが「にんじゃわんこ」であるデータ  

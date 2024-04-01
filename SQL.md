@@ -134,3 +134,8 @@ priceカラムを基準に降順に
 LIMIT  データの件数;  
 
 「ORDER BY」は「WHERE」と併用することが可能  
+```
+SELECT *
+FROM purchases
+LIMIT 5;
+```

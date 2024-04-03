@@ -139,3 +139,36 @@ SELECT *
 FROM purchases
 LIMIT 5;
 ```
+# DISTINCT
+検索結果から重複するデータを除く  
+DISTINCT(カラム名)  
+
+# SELECTで取得するカラムに使用することで、重複を省いたデータを取得  
+```
+SELECT DISTINCT(name)
+FROM purchases;
+```
+purchasesテーブルからnameカラムの重複したデータを省いて取得  
+
+# 四則演算「足す(+)、引く(-)、かける(*)、割る(/)」  
+priceカラムに1.08をかけ、消費税を含んだ値を取得  
+```
+SELECT name,price*1.08
+FROM purchases;
+```
+# 集計関数  
+数値データの合計、平均などを求めてくれるもの  
+# SUM関数  
+ SUM(カラム名)
+ SELECTで取得するカラムに用いることで、集計結果を取得することができる  
+```
+SELECT SUM(price)
+FROM purchases;
+```
+ character_nameが「にんじゃわんこ」であるpriceカラムのデータの合計を取得してください
+```
+SELECT SUM (price)
+FROM purchases
+WHERE character_name="にんじゃわんこ"
+;
+```

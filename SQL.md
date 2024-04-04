@@ -172,3 +172,18 @@ FROM purchases
 WHERE character_name="にんじゃわんこ"
 ;
 ```
+# AVG関数  
+数値の平均を計算する  
+AVG(カラム名)  
+SELECTで取得するカラムに使用することで、計算結果を取得することができる  
+```
+SELECT AVG(price)
+FROM purchases;
+```
+AVG関数はWHEREと併用することができる  
+SELECT AVG(price)
+FROM purchases
+WHERE character_name="にんじゃわんこ"
+;
+```
+

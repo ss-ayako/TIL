@@ -187,5 +187,5 @@ WHERE character_name="にんじゃわんこ"
 ;
 ```
 # COUNT関数
-
+指定したカラムのデータの合計数を計算  
 COUNT( カラム名 )

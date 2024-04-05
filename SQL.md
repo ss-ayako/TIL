@@ -186,7 +186,7 @@ FROM purchases
 WHERE character_name="にんじゃわんこ"
 ;
 ```
-# COUNT関数
+# COUNT関数  
 指定したカラムのデータの合計数を計算  
-COUNT( カラム名 )
-
+COUNT( カラム名 )  
+COUNT関数でカラム名を指定した場合、nullになっているデータの数は計算されない  

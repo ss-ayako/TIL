@@ -198,4 +198,4 @@ nullの数も含めてデータの数を計算したい場合は、COUNT関数�
 SELECT COUNT *
 FROM purchases;
 ```
-
+nullの数を含めてデータの数を数えられる

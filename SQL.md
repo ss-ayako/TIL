@@ -198,4 +198,14 @@ nullの数も含めてデータの数を計算したい場合は、COUNT関数�
 SELECT COUNT (*)
 FROM purchases;
 ```
-nullの数を含めてデータの数を数えられる
+nullの数を含めてデータの数を数えられる  
+
+
+ character_nameが「にんじゃわんこ」であるデータの数を取得してください
+
+```
+SELECT COUNT (*)
+FROM purchases
+WHERE character_name = "にんじゃわんこ"
+;
+```

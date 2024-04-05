@@ -197,7 +197,3 @@ SELECT COUNT *
 FROM purchases;
 ```
 
-#
-#
-#
-# 

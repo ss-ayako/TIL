@@ -186,4 +186,6 @@ FROM purchases
 WHERE character_name="にんじゃわんこ"
 ;
 ```
+# COUNT関数
 
+COUNT( カラム名 )

@@ -195,7 +195,7 @@ COUNT関数でカラム名を指定した場合、nullになっているデー�
 nullの数も含めてデータの数を計算したい場合は、COUNT関数で * (全てのカラム)を指定  
 
 ```
-SELECT COUNT *
+SELECT COUNT (*)
 FROM purchases;
 ```
 nullの数を含めてデータの数を数えられる

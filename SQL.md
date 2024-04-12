@@ -215,3 +215,13 @@ WHERE character_name = "にんじゃわんこ"
 SELECT MAX(カラム名）
 FROM purchases;
 ```
+
+```
+-- character_nameが「にんじゃわんこ」であるレコードの中で、
+-- もっとも大きいpriceカラムの値を取得してください
+
+SELECT MAX(price)
+FROM purchases
+WHERE character_name = "にんじゃわんこ"
+;
+```

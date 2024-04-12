@@ -209,3 +209,5 @@ FROM purchases
 WHERE character_name = "にんじゃわんこ"
 ;
 ```
+# MAX・MIN関数  
+保存されているデータの中で最大・最小のものを検索する集計関数  

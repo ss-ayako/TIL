@@ -225,3 +225,5 @@ FROM purchases
 WHERE character_name = "にんじゃわんこ"
 ;
 ```
+# GROUP BY  
+グループ化  

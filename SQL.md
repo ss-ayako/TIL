@@ -229,3 +229,11 @@ WHERE character_name = "にんじゃわんこ"
 グループ化  
 GROUP BY カラム名  
 GROUP BYを用いる場合、SELECTで使えるのは、GROUP BYに指定しているカラム名と、集計関数のみ  
+```
+purchased_atごとのお金を使った数を取得してください
+
+SELECT COUNT purchased_at
+FROM purchases
+GROUP BY purchased_at
+;
+```

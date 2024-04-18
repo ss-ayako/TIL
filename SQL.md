@@ -228,3 +228,4 @@ WHERE character_name = "にんじゃわんこ"
 # GROUP BY  
 グループ化  
 GROUP BY カラム名  
+GROUP BYを用いる場合、SELECTで使えるのは、GROUP BYに指定しているカラム名と、集計関数のみ  

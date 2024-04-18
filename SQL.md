@@ -230,9 +230,9 @@ WHERE character_name = "にんじゃわんこ"
 GROUP BY カラム名  
 GROUP BYを用いる場合、SELECTで使えるのは、GROUP BYに指定しているカラム名と、集計関数のみ  
 ```
-purchased_atごとのお金を使った数を取得してください
-
-SELECT COUNT purchased_at
+purchased_atごとのお金を使った数を取得してください  
+COUNT関数を使って、グループごとにデータの数とpurchased_atを取得  
+SELECT COUNT(price),purchased_at
 FROM purchases
 GROUP BY purchased_at
 ;

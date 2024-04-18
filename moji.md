@@ -75,5 +75,37 @@ FTPソフトに変換してもらう方法がうまくいかない場合は、
 FTP (File Transfer Protocol、ファイル転送プロトコル) は、  
 コンピュータ間でファイルを転送するために使用される標準的なインターネットプロトコル  
 ***
+絵文字を除外し、UTF-8とShift JISの文字コードで半角と全角の文字を混在させる方法を示します。絵文字の除外には、Unicodeの基本多言語面（BMP）内の文字のみを許可します。  
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>UTF-8とShift JISの文字コード混在入力</title>
+</head>
+<body>
+    <h2>UTF-8とShift JISの文字コード混在入力</h2>
+    <form method="post">
+        <label for="inputData">入力してください:</label>
+        <input type="text" id="inputData" name="inputData" required pattern="[^\x{10000}-\x{10FFFF}]">
+        <button type="submit">送信</button>
+    </form>
 
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $inputData = $_POST["inputData"];
+
+        // UTF-8に変換して表示
+        echo "<p>UTF-8: $inputData</p>";
+
+        // Shift JISに変換して表示
+        $sjis_data = mb_convert_encoding($inputData, "SJIS", "UTF-8");
+        echo "<p>Shift JIS: $sjis_data</p>";
+    }
+    ?>
+</body>
+</html>
+```
+このコードでは、入力フィールドにpattern="[^\x{10000}-\x{10FFFF}]"を追加して、Unicodeの基本多言語面（BMP）外の文字（絵文字を含む）を除外します。これにより、ユーザーは絵文字を入力できなくなります。  
+***
  

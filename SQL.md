@@ -227,4 +227,4 @@ WHERE character_name = "にんじゃわんこ"
 ```
 # GROUP BY  
 グループ化  
-GROUP BY カラム名
+GROUP BY カラム名  

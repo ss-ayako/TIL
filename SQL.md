@@ -238,3 +238,5 @@ FROM purchases
 GROUP BY purchased_at
 ;
 ```
+複数カラムのGROUP BYの書き方  
+GROUP BY カラム名,カラム名  

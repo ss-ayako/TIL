@@ -240,3 +240,5 @@ GROUP BY purchased_at
 ```
 複数カラムのGROUP BYの書き方  
 GROUP BY カラム名,カラム名  
+# HAVING
+グループ化したデータを更に絞り込みたい

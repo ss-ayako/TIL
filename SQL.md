@@ -242,3 +242,6 @@ GROUP BY purchased_at
 GROUP BY カラム名,カラム名  
 # HAVING
 グループ化したデータを更に絞り込みたい
+GROUP BY カラム名  
+HAVING 条件  
+条件を満たすグループを取得  

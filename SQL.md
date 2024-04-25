@@ -245,3 +245,4 @@ GROUP BY カラム名,カラム名
 GROUP BY カラム名  
 HAVING 条件  
 条件を満たすグループを取得  
+検索、グループ化、関数、HAVING  

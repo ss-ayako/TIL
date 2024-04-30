@@ -21,15 +21,18 @@ MAMP=Apacheが提供するwebシステムのパッケージソフトウェア
 VScodeで作成したhtmlファイルやphpファイルをMAMP上のApacheで実行する  
 sample1-1.html記述  
 ```
-<!DOCTYPE html>
+<!DOCTYPE html>文書型宣言
 <html>
   <head>
-    <title>一週間でphpの基礎が学べる本</title>
-    <meta charset="UTF-8">
+    <title>一週間でphpの基礎が学べる本</title>タブに表示される
+    <meta charset="UTF-8">UTF-8を指定してる
   </head>
   <body>
-    <h1>HTML入門</h1>
-    <p>まずはHTMLの基礎を学びましょう。<br>PHPはその次です!</p>
+    <h1>HTML入門</h1>見出しタグ
+    <p>まずはHTMLの基礎を学びましょう。<br>PHPはその次です!</p>pタグは自動で改行
   </body>
 </html>
 ```
+これで確認http://localhost/sample1-1.html  
+MAMPのhtdocsフォルダの直下＝localhost  
+localhost/sample1-1.htmlというURLは、MAMP¥htdocs¥sample1-1.htmlを指す  

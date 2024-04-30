@@ -19,4 +19,17 @@ https=HTMLで記述された情報を暗号化してやりとり
 VScode＝テキストエディタ  
 MAMP=Apacheが提供するwebシステムのパッケージソフトウェア  
 VScodeで作成したhtmlファイルやphpファイルをMAMP上のApacheで実行する  
-
+sample1-1.html記述  
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>一週間でphpの基礎が学べる本</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>HTML入門</h1>
+    <p>まずはHTMLの基礎を学びましょう。<br>PHPはその次です!</p>
+  </body>
+</html>
+```

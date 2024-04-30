@@ -274,3 +274,4 @@ WHERE goals >(
 SELECT AVG(goals)
 FROM players
 );
+```

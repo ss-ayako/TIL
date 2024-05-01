@@ -46,3 +46,16 @@ SELECT SUM(goals) AS "チームの合計得点"
 FROM players
 WHERE goals;
 ```
+***
+
+サブクエリを使って、ランキングが"日本"より上位である国のデータを取得してください。  
+```
+SELECT *
+FROM countries
+WHERE rank < (
+SELECT rank
+FROM countries
+WHERE name = "日本" 
+)
+;
+```

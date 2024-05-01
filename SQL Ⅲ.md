@@ -27,3 +27,6 @@ SELECT AVG(goals)
 FROM players
 );
 ```
+# AS  
+カラム名などに別名を定義  
+「カラム名 AS "名前"」  

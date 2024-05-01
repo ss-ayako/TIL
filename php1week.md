@@ -164,11 +164,15 @@ Webアプリの機能はどれかに当てはまる
 - 繰り返し処理 条件が成立する間、処理を繰り返す
 - 全てのアルゴリズムはこの３つの組み合わせで構成
 ***
+Webサーバがスクリプトを処理する流れ  
 MAMPの中にあるWebサーバであるサーバであるApacheには、「Localhost」というURLが割り当てられている  
-Webサーバ内の「htdocs」フォルダがこのURLの一に該当している  
-index.phpやindex.htmlの場合はファイル名を省略可能 localhost/index.phpもしくはlocalhost  
+Webサーバ内の「htdocs」フォルダがこのURLの位置に該当している  
+index.phpやindex.htmlの場合はファイル名を省略可能＝localhost/index.phpもしくはlocalhost  
 htdocs直下の場合のURLはlocalhost/ファイル名  
 ***
-
+URLに「localhost/chapter2/sample2-1.php」と入力するとApacheにリクエストが送られる  
+Apacheはこれを受けて「htdocs」フォルダ直下の「chapter2」フォルダにある「sample2-1.php」を表示する  
+実行結果がレスポンスとしてWebブラウザに送信される  
+***
 
 

@@ -36,3 +36,11 @@ sample1-1.html記述
 これで確認http://localhost/sample1-1.html  
 MAMPのhtdocsフォルダの直下＝localhost  
 localhost/sample1-1.htmlというURLは、MAMP¥htdocs¥sample1-1.htmlを指す  
+***
+CPUコンピュータなどの中心的な処理装置として働く電子回路のこと  
+コンピュータの心臓部,頭脳の役割  
+数値計算、情報処理、機器制御、プログラム実行もここ  
+プログラムはメモリに記録  
+CPUはメモリから命令やデータを読み出して、解釈して実行する  
+CPUに命令を与えるための言語をマシン語、機械語という  
+***

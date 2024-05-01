@@ -163,6 +163,12 @@ Webアプリの機能はどれかに当てはまる
 - 分岐処理　条件により処理の流れを変える
 - 繰り返し処理 条件が成立する間、処理を繰り返す
 - 全てのアルゴリズムはこの３つの組み合わせで構成
-- 
+***
+MAMPの中にあるWebサーバであるサーバであるApacheには、「Localhost」というURLが割り当てられている  
+Webサーバ内の「htdocs」フォルダがこのURLの一に該当している  
+index.phpやindex.htmlの場合はファイル名を省略可能 localhost/index.phpもしくはlocalhost  
+htdocs直下の場合のURLはlocalhost/ファイル名  
+***
+
 
 

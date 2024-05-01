@@ -174,5 +174,11 @@ URLに「localhost/chapter2/sample2-1.php」と入力するとApacheにリクエ
 Apacheはこれを受けて「htdocs」フォルダ直下の「chapter2」フォルダにある「sample2-1.php」を表示する  
 実行結果がレスポンスとしてWebブラウザに送信される  
 ***
+# PHPで使えるデータ型
+- bool 論理値　true,false  
+- int 整数 -1,100,0など
+- float,double 浮動小数点　小数点のついた数値 -8.27,0.0,5.89  
+- string 文字列　""もしくは''で囲む "PHP",'Hello'
+***
 
 

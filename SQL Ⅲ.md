@@ -30,3 +30,19 @@ FROM players
 # AS  
 カラム名などに別名を定義  
 「カラム名 AS "名前"」  
+
+heightカラムの値が180以上であるレコードから、データを取得してください。  
+ただし、取得したnameカラムはASを使って"身長180cm以上の選手"に変更してください。  
+```
+SELECT name AS "身長180cm以上の選手"
+FROM players
+WHERE height >= 180;
+```
+
+goalsデータの合計を取得してください。  
+ただし、取得したカラム名はASを使って"チームの合計得点"に変更してください  
+```
+SELECT SUM(goals) AS "チームの合計得点"
+FROM players
+WHERE goals;
+```

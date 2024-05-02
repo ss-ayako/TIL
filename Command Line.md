@@ -20,4 +20,16 @@ languages $ pwd
 /home/progate/languages
 languages $
 ```
+# ディレクトリの中身を表示  
+ls  
 
+lsコマンドを用いて、ディレクトリの中身を表示  
+「languages」ディレクトリに移動して、lsコマンドを用いて、ディレクトリの中身を表示  
+```
+~ $ ls
+about.txt     beginner.txt  html          languages
+~ $ cd languages
+languages $ ls
+index.txt
+languages $
+```

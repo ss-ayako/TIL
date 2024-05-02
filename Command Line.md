@@ -33,3 +33,10 @@ languages $ ls
 index.txt
 languages $
 ```
+
+# 1つ親のディレクトリ  
+cd ..  
+
+# ディレクトリを指定しないcdコマンド  
+cd  
+

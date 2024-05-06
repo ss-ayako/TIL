@@ -45,6 +45,20 @@ cd
 # ディレクトリごと移動  
 「mv ディレクトリ名 移動先のディレクトリ名」  
 
-lsで確認する  
+# lsで確認する 
+# ファイル名変更  
+ファイルやディレクトリの移動に使ったmvコマンドは、ファイル名を変更することにも使える  
+
+cdコマンドを用いて、「html」ディレクトリまで移動  
+「beginner.txt」ファイルを「dojo.txt」というファイル名に変更  
+
+```
+~ $ cd languages
+languages $ cd html
+
+html $ mv beginner.txt dojo.txt
+html $ ls
+```
+
 
 

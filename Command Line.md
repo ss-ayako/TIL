@@ -59,6 +59,38 @@ languages $ cd html
 html $ mv beginner.txt dojo.txt
 html $ ls
 ```
+# ファイルのコピー  
+「cp コピーするファイル名 新しいファイル名」  
+# ディレクトリのコピー  
+「cp -r コピーするディレクトリ名 新しいディレクトリ名」  
 
+```
+1 ホームディレクトリのlanguagesディレクトリに移動
+~ $ cd languages
+
+2 languagesディレクトリのhtmlディレクトリに移動
+languages $ cd html
+
+3 htmlディレクトリのdojo.txtファイルをコピーしてproject.txtファイルを作成
+html $ cp dojo.txt project.txt
+
+4 htmlディレクトリの中身を表示
+html $ ls
+
+5 languagesディレクトリに移動
+html $ cd ..
+
+6 languagesディレクトリのhtmlディレクトリをコピーしてrubyディレクトリを作成
+languages $ cp -r html ruby
+
+7 languagesディレクトリの中身を表示
+languages $ ls
+
+8 languagesディレクトリのrubyディレクトリに移動
+languages $ cd ruby
+
+9 rubyディレクトリの中身を表示
+ruby $ ls
+```
 
 

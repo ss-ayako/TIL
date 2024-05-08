@@ -93,4 +93,8 @@ languages $ cd ruby
 ruby $ ls
 ```
 
+# ファイルの削除  
+「rm ファイル名」  
+# ディレクトリの削除  
+「rm -r ディレクトリ」  
 

@@ -38,7 +38,7 @@ SELECT name AS "身長180cm以上の選手"
 FROM players
 WHERE height >= 180;
 ```
-
+***
 goalsデータの合計を取得してください。  
 ただし、取得したカラム名はASを使って"チームの合計得点"に変更してください  
 ```

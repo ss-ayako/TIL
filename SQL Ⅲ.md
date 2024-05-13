@@ -64,3 +64,17 @@ WHERE name = "日本"
 countriesテーブルに主キー（id）はあったから、playersテーブルにだけ外部キー（country_id）を追加  
 # JOIN  
 紐付いたテーブル同士はJOINを使うことで合体させることができる  
+ONで条件を指定  
+結合条件は、「ON テーブル名.カラム名 = テーブル名.カラム名」で指定  
+JOINを含んだクエリでは、はじめにJOINが実行。その次に、結合されたテーブルに対してSELECTが実行.  
+
+JOINを使い、playersテーブルにcountriesテーブル を結合してデータを取得してください。  
+ONを使い、playersテーブルのcountry_idとcountriesテーブルのidを紐づけてください。  
+```
+SELECT *
+FROM players
+--結合するテーブル名を追加してください
+JOIN countries
+--結合条件を追加してください
+ON players.country_id=countries.id;
+```

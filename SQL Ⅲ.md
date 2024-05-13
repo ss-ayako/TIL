@@ -80,3 +80,15 @@ ON players.country_id=countries.id;
 ```
 複数のテーブルに同じカラム名が存在するときは、「テーブル名.カラム名」で指定しなければならない  
 SQLは、取得するテーブルを形成してから検索を行うので、FROM・JOINが先に行われる  
+
+```
+SELECT countries.name,SUM(goals)
+FROM players
+JOIN countries
+ON players.country_id = countries.id
+GROUP BY countries.name;
+```
+JOINを使い、playersテーブルにcountriesテーブル を結合して、下記のデータを取得してください。  
+①countriesテーブルのnameカラム  
+②goalsカラムの合計  
+ただし、 GROUP BYを使って、countries.nameごとにグループ化してください。  

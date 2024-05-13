@@ -78,3 +78,4 @@ JOIN countries
 --結合条件を追加してください
 ON players.country_id=countries.id;
 ```
+複数のテーブルに同じカラム名が存在するときは、「テーブル名.カラム名」で指定しなければならない  

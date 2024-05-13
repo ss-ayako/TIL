@@ -79,3 +79,4 @@ JOIN countries
 ON players.country_id=countries.id;
 ```
 複数のテーブルに同じカラム名が存在するときは、「テーブル名.カラム名」で指定しなければならない  
+SQLは、取得するテーブルを形成してから検索を行うので、FROM・JOINが先に行われる  

@@ -34,7 +34,7 @@ languages $ ls
 index.txt
 languages $
 ```
-
+***
 # 1つ親のディレクトリ  
 cd ..  
 

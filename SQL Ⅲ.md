@@ -93,3 +93,5 @@ JOINを使い、playersテーブルにcountriesテーブル を結合して、�
 ②goalsカラムの合計  
 ただし、 GROUP BYを使って、countries.nameごとにグループ化してください。  
 ***
+JOINを使った結合は、FROMで指定したテーブルを基準に実行される  
+ただし、外部キーがNULLのレコードは、実行結果に表示されない

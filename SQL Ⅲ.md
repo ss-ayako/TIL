@@ -82,22 +82,38 @@ ON players.country_id=countries.id;
 SQLは、取得するテーブルを形成してから検索を行うので、FROM・JOINが先に行われる  
 
 ```
+JOINを使い、playersテーブルにcountriesテーブル を結合して、下記のデータを取得してください。  
+①countriesテーブルのnameカラム  
+②goalsカラムの合計  
+ただし、 GROUP BYを使って、countries.nameごとにグループ化してください。
+
 SELECT countries.name,SUM(goals)
 FROM players
 JOIN countries
 ON players.country_id = countries.id
 GROUP BY countries.name;
 ```
-JOINを使い、playersテーブルにcountriesテーブル を結合して、下記のデータを取得してください。  
-①countriesテーブルのnameカラム  
-②goalsカラムの合計  
-ただし、 GROUP BYを使って、countries.nameごとにグループ化してください。  
+
 ***
 JOINを使った結合は、FROMで指定したテーブルを基準に実行される  
 ただし、外部キーがNULLのレコードは、実行結果に表示されない
+***
 ```
-JOINを使い、playersテーブルにteamsテーブルを結合して、データを取得  
+JOINを使い、playersテーブルにteamsテーブルを結合して、データを取得
+
 SELECT *
+FROM players
+JOIN teams
+ON players.previous_team_id=teams.id;
+```
+
+```
+JOINを使い、playersテーブルにteamsテーブルを結合して、下記のデータを取得してください。  
+① playersテーブルのnameカラム  
+② teamsテーブルのnameカラム  
+ただし、①は選手名②は前年所属していたチームにカラム名を変更してください。  
+SELECT players.name AS "選手名",teams.name AS "前年所属していたチーム"
+
 FROM players
 JOIN teams
 ON players.previous_team_id=teams.id;

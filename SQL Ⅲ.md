@@ -95,3 +95,10 @@ JOINを使い、playersテーブルにcountriesテーブル を結合して、�
 ***
 JOINを使った結合は、FROMで指定したテーブルを基準に実行される  
 ただし、外部キーがNULLのレコードは、実行結果に表示されない
+```
+JOINを使い、playersテーブルにteamsテーブルを結合して、データを取得  
+SELECT *
+FROM players
+JOIN teams
+ON players.previous_team_id=teams.id;
+```

@@ -120,3 +120,5 @@ JOIN teams
 ON players.previous_team_id=teams.id;
 ```
 ***
+# LEFT JOIN  
+FROMで指定したテーブルのレコードを全て取得  

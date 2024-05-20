@@ -122,3 +122,11 @@ ON players.previous_team_id=teams.id;
 ***
 # LEFT JOIN  
 FROMで指定したテーブルのレコードを全て取得  
+```
+LEFT JOINを使い、playersテーブルにteamsテーブルを結合して、データを取得
+
+SELECT *
+FROM players
+LEFT JOIN teams
+ON players.previous_team_id = teams.id;
+```

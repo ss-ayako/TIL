@@ -21,6 +21,7 @@ languages $ pwd
 /home/progate/languages
 languages $
 ```
+***
 # ディレクトリの中身を表示  
 ls  
 

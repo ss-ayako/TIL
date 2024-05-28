@@ -135,10 +135,12 @@ ON players.previous_team_id = teams.id;
 LEFT JOINを使い、playersテーブルにteamsテーブルを結合して、下記のデータを取得してください。  
 ① playersテーブルのnameカラム  
 ② teamsテーブルのnameカラム  
-ただし、①は選手名②は前年所属していたチームにカラム名を変更してください。
+ただし、①は選手名②は前年所属していたチームにカラム名を変更してください。  
 
 SELECT players.name AS "選手名",teams.name AS "前年所属していたチーム"
 FROM players
 LEFT JOIN teams
 ON players.previous_team_id = teams.id;
 ```
+JOINは1つのクエリで、複数回使用できる  
+JOINを複数回使用しても、FROMは1度だけ書けば大丈夫  

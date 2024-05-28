@@ -144,3 +144,8 @@ ON players.previous_team_id = teams.id;
 ```
 JOINは1つのクエリで、複数回使用できる  
 JOINを複数回使用しても、FROMは1度だけ書けば大丈夫  
+JOIN  
+ON  
+LEFT JOIN  
+ON  
+***

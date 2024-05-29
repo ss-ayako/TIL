@@ -149,3 +149,16 @@ ON
 LEFT JOIN  
 ON  
 ***
+まとめ！！  
+```
+サブクエリを使って、heightカラムの値が平均身長よりも高いレコードから、下記のデータを取得してください。  
+①name ②height  
+ただし、① は 選手名② は身長にカラム名を変更  
+
+SELECT name AS "選手名",height AS "身長"
+FROM players
+ WHERE height >(
+ SELECT AVG(height)
+ FROM players
+ );
+```

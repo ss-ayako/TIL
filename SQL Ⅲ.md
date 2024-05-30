@@ -173,3 +173,15 @@ JOIN countries
 ON players.country_id = countries.id
 WHERE countries.name ="日本" AND players.height >=180;
 ```
+
+```
+JOINを使って、下記のデータを取得してください。  
+①countries.name  
+②国ごとのgoalsの平均  
+ただし、① は国名② は平均得点にカラム名を変更してください。  
+SELECT countries.name AS "国名",AVG(goals) AS "平均得点"
+FROM players
+JOIN countries
+ON players.country_id = countries.id
+GROUP BY countries.name;
+```

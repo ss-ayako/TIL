@@ -154,7 +154,7 @@ ON
 サブクエリを使って、heightカラムの値が平均身長よりも高いレコードから、下記のデータを取得してください。  
 ①name ②height  
 ただし、① は 選手名② は身長にカラム名を変更  
-
+***
 SELECT name AS "選手名",height AS "身長"
 FROM players
  WHERE height >(
@@ -167,6 +167,7 @@ FROM players
 JOINを使って、下記の条件に当てはまるデータを取得してください。  
 ① 出身国が日本  
 ② 身長が180以上
+***
 SELECT *
 FROM players
 JOIN countries
@@ -178,7 +179,8 @@ WHERE countries.name ="日本" AND players.height >=180;
 JOINを使って、下記のデータを取得してください。  
 ①countries.name  
 ②国ごとのgoalsの平均  
-ただし、① は国名② は平均得点にカラム名を変更してください。  
+ただし、① は国名② は平均得点にカラム名を変更してください。
+***
 SELECT countries.name AS "国名",AVG(goals) AS "平均得点"
 FROM players
 JOIN countries

@@ -162,3 +162,14 @@ FROM players
  FROM players
  );
 ```
+
+```
+JOINを使って、下記の条件に当てはまるデータを取得してください。  
+① 出身国が日本  
+② 身長が180以上
+SELECT *
+FROM players
+JOIN countries
+ON players.country_id = countries.id
+WHERE countries.name ="日本" AND players.height >=180;
+```

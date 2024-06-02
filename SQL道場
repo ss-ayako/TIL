@@ -10,6 +10,7 @@ SELECT *
 FROM users
 WHERE gender = 0 AND age <=20;
 ```
+***
 ```
 -- ユーザーの年齢ごとの人数と、その年齢を取得してください
 SELECT age,COUNT(*)
@@ -17,3 +18,10 @@ FROM users
 GROUP BY age 
 ;
 ```
+```
+-- 全商品の名前を重複無く取得してください
+SELECT DISTINCT(name)
+FROM items
+;
+```
+***

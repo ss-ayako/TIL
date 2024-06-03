@@ -1,23 +1,23 @@
 ```
--- ユーザー全体の平均年齢を取得してください
+ユーザー全体の平均年齢を取得してください  
 SELECT AVG(age)
 FROM users;
 ```
 ```  
--- 20歳未満の男性ユーザーの、全てのカラムの値を取得してください。
+20歳未満の男性ユーザーの、全てのカラムの値を取得してください。  
 SELECT *
 FROM users
 WHERE gender = 0 AND age <=20;
 ```  
 ```
--- ユーザーの年齢ごとの人数と、その年齢を取得してください
+ユーザーの年齢ごとの人数と、その年齢を取得してください  
 SELECT age,COUNT(*)
 FROM users
 GROUP BY age 
 ;
 ```
 ```
--- 全商品の名前を重複無く取得してください
+全商品の名前を重複無く取得してください  
 SELECT DISTINCT(name)
 FROM items
 ;
@@ -25,7 +25,7 @@ FROM items
 ***  
 
 ```
--- 全商品の名前と値段を、値段が高い順に並べてください
+全商品の名前と値段を、値段が高い順に並べてください  
 SELECT name,price
 FROM items
 ORDER BY price DESC;

@@ -112,6 +112,7 @@ JOIN sales_records
 ON items.id=sales_records.item_id
 GROUP BY  items.id,items.name
 ORDER BY count(*) DESC
+LIMIT 5
 ;
 ```
 ```

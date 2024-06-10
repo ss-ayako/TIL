@@ -123,3 +123,10 @@ JOIN sales_records
 ON items.id=sales_records.item_id
 ;
 ```
+```
+-- 日ごとの販売個数とその日付を取得してください
+SELECT sales_records.purchased_at,COUNT(*) AS "販売個数"
+FROM sales_records
+GROUP BY purchased_at
+;
+```

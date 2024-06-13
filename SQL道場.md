@@ -139,3 +139,17 @@ ON items.id=sales_records.item_id
 GROUP BY purchased_at
 ORDER BY purchased_at ASC;//順番大事これが一番した
 ```
+```
+-- 「サンダル」を購入したユーザーのidと名前を重複無く取得してください
+SELECT users.id,users.name
+FROM users
+JOIN sales_records
+ON sales_records.user_id = users.id  
+
+WHERE sales_records.item_id = (            
+SELECT id            
+FROM items            
+WHERE name = "サンダル"            
+)            
+GROUP BY users.id, users.name;
+```

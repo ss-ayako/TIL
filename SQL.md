@@ -35,7 +35,8 @@ SELECT *
 FROM purchases;
 ```
 ***
-WHEREを用いて、数値データを条件に取得
+# WHERE
+数値データを条件に取得  
 ```
 SELECT *
 FROM purchases

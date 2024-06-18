@@ -82,3 +82,11 @@ SELECT *
 FROM purchases
 WHERE NOT character_name = "にんじゃわんこ";　//NOT　ではないもの
 ```
+SQLで文字列の部分一致をチェックするためには、LIKE 演算子を使用する必要がある  
+```
+-- 「FROM purchases」のあとにコードを追加し、nameカラムが「プリン」を含まないデータを取得してください
+
+SELECT *
+FROM purchases
+WHERE NOT name LIKE "%プリン%"
+```

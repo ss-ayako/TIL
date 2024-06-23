@@ -157,3 +157,10 @@ SELECT *
 FROM purchases
 WHERE purchased_at <= "2017-08-01";
 ```
+```
+-- 「FROM purchases」のあとにコードを追加し、nameカラムが「プリン」を含むデータを取得してください
+
+SELECT *
+FROM purchases
+WHERE name LIKE "%プリン%";
+```

@@ -10,3 +10,15 @@ FROM purchases;
 SELECT name, price, price*1.08
 FROM purchases;
 ```
+```
+-- priceカラムのデータの合計を取得してください
+
+SELECT SUM(price)
+FROM purchases;
+```
+```
+-- priceカラムのデータの合計を取得してください
+
+SELECT SUM(price)
+FROM purchases;
+```

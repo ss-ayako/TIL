@@ -22,3 +22,11 @@ FROM purchases;
 SELECT SUM(price)
 FROM purchases;
 ```
+```
+-- character_nameが「にんじゃわんこ」であるpriceカラムのデータの合計を取得してください
+
+SELECT SUM(price)
+FROM purchases
+WHERE character_name = "にんじゃわんこ"
+;
+```

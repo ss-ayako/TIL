@@ -51,3 +51,9 @@ WHERE character_name = "にんじゃわんこ"
 SELECT COUNT(name)
 FROM purchases;
 ```
+```
+-- purchasesテーブルのデータの数を取得してください
+
+SELECT COUNT (*)
+FROM purchases;
+```

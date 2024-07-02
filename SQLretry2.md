@@ -65,3 +65,9 @@ FROM purchases
 WHERE character_name="にんじゃわんこ"
 ;
 ```
+```
+-- もっとも大きいpriceカラムの値を取得してください
+
+SELECT MAX(price)
+FROM purchases;
+```

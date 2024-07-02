@@ -71,3 +71,9 @@ WHERE character_name="にんじゃわんこ"
 SELECT MAX(price)
 FROM purchases;
 ```
+```
+-- もっとも小さいpriceカラムの値を取得してください
+
+SELECT MIN (price)
+FROM purchases;
+```

@@ -78,6 +78,7 @@ FROM purchases;
 SELECT MIN (price)
 FROM purchases;
 ```
+***
 ```
 -- purchased_atごとの合計金額を取得してください
 

@@ -95,6 +95,7 @@ FROM purchases
 GROUP BY purchased_at
 ;
 ```
+***
 ```
 -- purchased_atとcharacter_nameごとの合計金額を取得してください
 

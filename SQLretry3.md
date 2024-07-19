@@ -51,6 +51,7 @@ WHERE name="日本"
 )
 ;
 ```
+# テーブル紐付け  
 ```
 SELECT sum(goals),country_id
 FROM players

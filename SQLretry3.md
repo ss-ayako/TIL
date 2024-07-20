@@ -57,3 +57,4 @@ SELECT sum(goals),country_id
 FROM players
 GROUP BY country_id;
 ```
+最初にテーブル結合、後からselect読み込まれるそんな順番

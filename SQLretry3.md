@@ -66,3 +66,4 @@ JOIN countries
 --結合条件を追加してください
 ON players.country_id=countries.id;
 ```
+***

@@ -21,7 +21,7 @@ WHERE goals > (
 )
 ;
 ```
-＊＊＊
+***
 ```
 SELECT name,goals
 FROM players

@@ -95,3 +95,18 @@ FROM players
 JOIN teams
 ON players.previous_team_id=teams.id;
 ```
+# LEFT JOINを使うことで、外部キーがNULLのレコードもNULLのまま実行結果に表示  
+```
+SELECT *
+FROM players
+LEFT JOIN teams
+ON players.previous_team_id = teams.id
+;
+```
+```
+SELECT players.name AS "選手名",teams.name AS "前年所属していたチーム"
+FROM players
+LEFT JOIN teams
+ON players.previous_team_id = teams.id
+;
+```

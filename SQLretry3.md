@@ -83,3 +83,9 @@ ON players.country_id=countries.id
 GROUP BY countries.name;
 ```
 ***
+```
+SELECT *
+FROM players
+JOIN teams
+ON players.previous_team_id=teams.id;
+```

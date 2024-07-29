@@ -120,3 +120,12 @@ LEFT JOIN teams
 ON teams.id=players.previous_team_id
 ;
 ```
+# 総合問題  
+```
+SELECT *
+FROM players
+JOIN countries
+ON countries.id=players.country_id
+WHERE countries.name="日本" AND players.height>=180
+;
+```

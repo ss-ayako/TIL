@@ -129,3 +129,11 @@ ON countries.id=players.country_id
 WHERE countries.name="日本" AND players.height>=180
 ;
 ```
+```
+SELECT countries.name AS "国名",AVG(goals) AS "平均得点"
+FROM players
+JOIN countries
+ON countries.id=players.country_id
+GROUP BY countries.name
+;
+```

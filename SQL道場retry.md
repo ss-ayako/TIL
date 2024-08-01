@@ -17,3 +17,9 @@ WHERE age < 20 AND gender = 0
 SELECT DISTINCT(name)
 FROM items;
 ```
+```
+-- 全商品の名前と値段を、値段が高い順に並べてください
+SELECT name,price
+FROM items
+ORDER BY price DESC;
+```

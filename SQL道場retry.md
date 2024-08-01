@@ -12,3 +12,8 @@ FROM users
 WHERE age < 20 AND gender = 0
 ;
 ```
+```
+-- 全商品の名前を重複無く取得してください
+SELECT DISTINCT(name)
+FROM items;
+```

@@ -77,3 +77,12 @@ FROM sales_records
 GROUP BY item_id
 ;
 ```
+```
+-- 売れた数が多い上位5商品のidと個数を取得してください
+SELECT item_id,count(*)
+FROM sales_records
+GROUP BY item_id
+ORDER BY count(*) DESC
+LIMIT 5
+;
+```

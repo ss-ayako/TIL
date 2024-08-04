@@ -70,3 +70,10 @@ FROM items
 WHERE name = "グレーパーカー")
 ;
 ```
+```
+-- 商品ごとに商品のid、売れた個数を取得してください
+SELECT item_id,count(*)
+FROM sales_records
+GROUP BY item_id
+;
+```

@@ -86,3 +86,13 @@ ORDER BY count(*) DESC
 LIMIT 5
 ;
 ```
+```
+-- 売れた数が多い上位5商品のIDと名前、個数を取得してください
+SELECT items.id,items.name,count(*)
+FROM items
+JOIN sales_records
+ON sales_records.item_id = items.id
+GROUP BY items.id
+ORDER BY count(*) DESC
+;
+```

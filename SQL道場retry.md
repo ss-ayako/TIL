@@ -111,3 +111,12 @@ FROM sales_records
 GROUP BY purchased_at
 ORDER BY purchased_at ASC;
 ```
+```
+-- 日ごとの売上額とその日付を取得してください
+SELECT purchased_at,SUM(price) AS "売上額"
+FROM sales_records
+JOIN items
+ON items.id=sales_records.item_id
+GROUP BY  purchased_at
+;
+```

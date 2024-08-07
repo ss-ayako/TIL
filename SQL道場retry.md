@@ -130,3 +130,14 @@ GROUP BY users.id
 HAVING 10 <= COUNT(*)
 ;
 ```
+```
+SELECT DISTINCT users.id,users.name
+FROM users
+JOIN sales_records
+ON users.id = sales_records.user_id
+WHERE sales_records.item_id = (
+SELECT id
+FROM items
+WHERE name="サンダル")
+;
+```

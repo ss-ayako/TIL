@@ -161,3 +161,18 @@ ORDER BY SUM(price) DESC
 LIMIT 5
 ;
 ```
+```
+-- グレーパーカーより売上額が高い商品の指定されたデータを取得してください
+SELECT items.id,items.name,SUM(items.price) AS "売上額"
+FROM items
+JOIN sales_records
+ON items.id=sales_records.item_id
+GROUP BY items.id,items.name,items.price
+HAVING SUM(items.price) >(
+SELECT SUM(items.price)
+FROM items
+JOIN sales_records
+ON items.id=sales_records.item_id
+WHERE name ="グレーパーカー")
+;
+```

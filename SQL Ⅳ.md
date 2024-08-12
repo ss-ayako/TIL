@@ -13,3 +13,10 @@ UPDATE students SET name="Jordan",course="HTML"WHERE id=6;
 -- 下記のクエリは消さないでください。
 SELECT * FROM students WHERE id=6;
 ```
+```
+-- studentsテーブルからidカラムの値が7のレコードを削除してください。
+DELETE FROM students WHERE id = 7;
+
+-- 下記のクエリは消さないでください。
+SELECT * FROM students;
+```

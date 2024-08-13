@@ -7,12 +7,14 @@ select * from students;
 ```
 ***
 ```
+追加
 -- studentsテーブルのidカラムの値が6のレコードをnameをJordanに、courseをHTMLに変更してください。
 UPDATE students SET name="Jordan",course="HTML"WHERE id=6;
 
 -- 下記のクエリは消さないでください。
 SELECT * FROM students WHERE id=6;
 ```
+***
 ```
 -- studentsテーブルからidカラムの値が7のレコードを削除してください。
 DELETE FROM students WHERE id = 7;

@@ -17,6 +17,7 @@ SELECT * FROM students WHERE id=6;
 ```
 ***
 ```
+削除
 -- studentsテーブルからidカラムの値が7のレコードを削除してください。
 DELETE FROM students WHERE id = 7;
 

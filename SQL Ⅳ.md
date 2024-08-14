@@ -1,4 +1,5 @@
 ```
+追加
 -- studentsテーブルにデータを追加してください。
 INSERT INTO students (name,course) VALUES ("Kate","Java");
 
@@ -7,7 +8,7 @@ select * from students;
 ```
 ***
 ```
-追加
+更新
 -- studentsテーブルのidカラムの値が6のレコードをnameをJordanに、courseをHTMLに変更してください。
 UPDATE students SET name="Jordan",course="HTML"WHERE id=6;
 

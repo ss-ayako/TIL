@@ -115,7 +115,8 @@ $menus=array($juice,$coffee,$curry,$pasta);
 echoをしないとphpの処理の結果が出力  
 ```
 <img src="<?php echo $menu->image?>">
-```  
+```
+***
   
 Menuクラスに、・$price・$imageというプロパティを定義  
 コンストラクタでプロパティの値をセットできるように,引数に$price, $imageを追加  

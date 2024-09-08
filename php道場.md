@@ -37,3 +37,41 @@ echo '税込価格は'.$kakaku.'円です';
 
 ?>
 ```
+- 変数$moneyには所持金が代入されています。
+
+-以下のように出力してください。
+・所持金が税込価格より大きい場合、
+商品を買うことができます
+
+・両方の値が等しい場合、
+商品を買うことができますが、所持金がなくなります
+
+・所持金が税込価格より小さい場合、
+商品を買うことができません
+
+```
+<?php
+$money = 2000;
+$price = 1000;
+$taxRate = 0.08;
+echo '変数$moneyの値: '.$money;
+echo '<br>';
+echo '変数$priceの値: '.$price;
+echo '<br>';
+echo '変数$taxRateの値: '.$taxRate;
+echo '<br>';
+echo '-----';
+echo '<br>';
+
+// この下にコードを書いてください
+$kakaku = $price + $price * $taxRate;
+
+if ($money>$kakaku){
+  echo "商品を買うことができます";
+}else if($money===$kakaku){
+ echo "商品を買うことができますが、所持金がなくなります";
+}else{
+  echo "商品を買うことができません";
+}
+?>
+```

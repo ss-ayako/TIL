@@ -120,3 +120,29 @@ for($i=1;$i<=100;$i++){
  }
 ?>
 ```
+- 配列の中を全部足して表示する
+- 例えば、$totalPrice は最初に 0 で初期化される。
+- ループが始まり、最初の $price（1000）が $totalPrice に加算される → $totalPrice = 1000。
+- 次の $price（2000）が加算される → $totalPrice = 3000。
+- 最後の $price（1500）が加算される → $totalPrice = 4500。
+- echo によって「合計金額は4500円です」と表示される。
+```
+<?php
+$prices = array(1000, 650, 750, 800);
+echo '$pricesの値: ';
+foreach ($prices as $price) {
+  echo $price.' ';
+}
+echo '<br>';
+echo '-----';
+echo '<br>';
+
+// この下にコードを書いてください
+$totalPrice = 0;
+foreach ($prices as $price) {
+$totalPrice = $totalPrice + $price;
+}
+echo '合計金額は'.$totalPrice.'円です';
+
+?>
+```

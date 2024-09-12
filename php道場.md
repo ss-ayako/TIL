@@ -189,3 +189,23 @@ echo $menu['name']."は".$menu['price']."円です";
 
 ?>
 ```
+-　これ間違い、$menusじゃなく$menuで。
+- コードの間違いは、foreach ループ内で $menu を使っているのに、$menus['name'] や $menus['price'] を参照している点です。
+- ループ内では、$menu に各メニューの情報が入っているので、$menu['name'] や $menu['price'] を使用する必要があります。
+
+```
+<?php
+$menus = array(
+  array('name' => 'CURRY', 'price' => 900),
+  array('name' => 'PASTA', 'price' => 1200),
+  array('name' => 'COFFEE', 'price' => 600)
+);
+
+// この下にコードを書いてください
+foreach ($menus as $menu) {
+ echo $menus['name'].'は'.$menus['price'].'円です';
+ echo '<br>';
+}
+
+?>
+```

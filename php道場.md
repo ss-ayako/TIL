@@ -226,3 +226,26 @@ foreach ($menus as $menu) {
 
 ?>
 ```
+- これだと間違い。
+- コードにいくつか問題があります。主な問題は、$totalprice の計算において $menu が正しく使われていないことです。
+- 具体的には、$menu は配列であり、そのまま加算することはできません。$menu['price'] を使って価格を加算する必要があります。
+```
+<?php
+$menus = array(
+  array('name' => 'CURRY', 'price' => 900),
+  array('name' => 'PASTA', 'price' => 1200),
+  array('name' => 'COFFEE', 'price' => 600)
+);
+
+// この下にコードを書いてください
+foreach ($menus as $menu) {
+ echo $menu['name'].'は'.$menu['price'].'円です';
+ echo '<br>';
+}
+$totalprice = 0;
+foreach ($menus as $menu) {
+$totalprice = $totalprice + $menu;
+}
+echo '合計金額は'.$totalprice.'円です';
+?>
+```

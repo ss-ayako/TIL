@@ -300,3 +300,8 @@ echo $maxPricemenuname.'が最高価格で'.$maxPrice.'です';
 
 ?>
 ```
+- 最初の $maxPrice は 0 です。
+- 最初のメニュー CURRY の価格 900 は $maxPrice より大きいので、$maxPrice が 900 に更新され、 $maxPricemenuname が 'CURRY' になります。
+- 次に PASTA の価格 1200 は現在の $maxPrice より大きいので、$maxPrice が 1200 に更新され、 $maxPricemenuname が 'PASTA' になります。
+- 最後の COFFEE の価格 600 は $maxPrice よりも小さいので、 $maxPrice と $maxPricemenuname は変わりません。
+- このようになまえは随時更新されている。それがりかいできなかった。

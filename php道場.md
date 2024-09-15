@@ -305,3 +305,34 @@ echo $maxPricemenuname.'が最高価格で'.$maxPrice.'です';
 - 次に PASTA の価格 1200 は現在の $maxPrice より大きいので、$maxPrice が 1200 に更新され、 $maxPricemenuname が 'PASTA' になります。
 - 最後の COFFEE の価格 600 は $maxPrice よりも小さいので、 $maxPrice と $maxPricemenuname は変わりません。
 - このようになまえは随時更新されている。それがりかいできなかった。
+```
+<?php
+$menus = array(
+  array('name' => 'CURRY', 'price' => 900),
+  array('name' => 'PASTA', 'price' => 1200),
+  array('name' => 'COFFEE', 'price' => 600)
+);
+
+// この下にコードを書いてください
+foreach ($menus as $menu) {
+ echo $menu['name'].'は'.$menu['price'].'円です';
+ echo '<br>';
+}
+
+$totalprice = 0;
+$maxPrice = 0;
+$maxPricemenuname = '';
+
+foreach ($menus as $menu) {
+$totalprice = $totalprice + $menu['price'];
+if($menu['price']>$maxPrice){
+  $maxPrice = $menu['price'];
+  $maxPricemenuname = $menu['name'];
+}
+}
+echo '合計金額は'.$totalprice.'円です';
+echo '<br>';
+echo $maxPricemenuname.'が最高価格で'.$maxPrice.'円です';
+echo '<br>';
+?>
+```

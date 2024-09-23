@@ -185,3 +185,30 @@ echo '合計金額は'.$totalprice.'円です';
 
 ?>
 ```
+```
+<?php
+$menus = array(
+  array('name' => 'CURRY', 'price' => 900),
+  array('name' => 'PASTA', 'price' => 1200),
+  array('name' => 'COFFEE', 'price' => 600)
+);
+
+// この下にコードを書いてください
+$totalprice = 0;
+$maxprice = 0;
+$maxpricemenu = 0;
+foreach($menus as $menu){
+  echo $menu['name'].'は'.$menu['price'].'円です';
+  echo '<br>';
+  $totalprice = $totalprice + $menu['price'];
+  if($menu['price']>$maxprice){
+    $maxprice = $menu['price'];
+    $maxpricemenu = $menu['name'];
+  }
+}
+echo '合計金額は'.$totalprice.'円です';
+echo '<br>';
+echo $maxpricemenu.'が最高価格で'.$maxprice.'円です';
+
+?>
+```

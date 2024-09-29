@@ -206,3 +206,4 @@ echo '合計金額は'.$totalprice.'円です';
 echo $maxpricemenu .'が最高価格で'.$maxprice.'円です';  
 ?>
 ```
+***

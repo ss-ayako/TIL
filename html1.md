@@ -21,3 +21,28 @@ body {
     height:270px;
  }
 ```
+```
+body {
+  font-family: "Avenir Next";
+}
+
+/* list-styleプロパティを用いて、<li>要素の黒点を取り除いてください */
+.header-list{
+  list-style: none;
+}
+
+.header {
+  background-color: #f7f2b4;
+  height: 90px;
+}
+
+.main {
+  background-color: #bdf7f1;
+  height: 600px;
+}
+
+.footer {
+  background-color: #ceccf3;
+  height: 270px;
+}
+```

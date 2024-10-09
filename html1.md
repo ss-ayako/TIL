@@ -479,3 +479,31 @@ height:500px;
   </body>
 </html>
 ```
+```
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a {
+  text-decoration: none;
+}
+
+/* containerクラスのCSSを指定してください */
+.container{
+  width:1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+/* top-wrapperクラスのCSSを指定してください */
+.top-wrapper{
+  padding:180px 0 100px 0;
+  background-image:url(https://prog-8.com/images/html/advanced/top.png);
+  background-size:cover;
+  color:white;
+}
+
+
+```

@@ -543,3 +543,112 @@ letter-spacing:5px;
 }
 
 ```
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Progate</title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <header>
+    </header>
+    <div class="top-wrapper">
+      <div class="container">
+        <h1>LEARN TO CODE.</h1>
+        <h1>LEARN TO BE CREATIVE.</h1>
+        <p>Progateはオンラインプログラミング学習サービスです。</p>
+        <p>初心者にもやさしいスライドとレッスンで、Webサービスを作りながらプログラミングを学んでいきましょう。</p>
+        <!-- ここにコードを書いていきましょう -->
+        <div class="btn-wrapper">
+          <a href="#" class="btn signup">新規登録はこちら</a>
+          <p>or sign up with</p>
+          <a href="#" class="btn facebook">Facebookで登録</a>
+          <a href="#" class="btn twitter">Twitterで登録</a>
+        </div>
+      </div>
+    </div>
+    <div class="lesson-wrapper">
+    </div>
+    <div class="message-wrapper">
+    </div>
+    <footer>
+    </footer>
+  </body>
+</html>
+```
+```
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(https://prog-8.com/images/html/advanced/top.png);
+  background-size: cover;
+  color: white;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+}
+
+/* btnクラスのCSSを指定してください */
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+}
+
+
+/* signupクラスのCSSを指定してください */
+.signup{
+background-color: #239b76;
+}
+
+
+
+/* facebookクラスのCSSを指定してください */
+.facebook{
+background-color: #3b5998;
+margin-right: 10px;
+}
+
+
+/* twitterクラスのCSSを指定してください */
+.twitter{
+background-color: #55acee;
+}
+
+
+/* btn-wrapperクラスのCSSを指定してください */
+.btn-wrapper{
+margin: 20px 0;
+}
+
+
+/* btn-wrapperクラスの中にある<p>のCSSを指定してください */
+.btn-wrapper p{
+margin:10px 0;
+}
+
+```

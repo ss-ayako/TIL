@@ -81,3 +81,6 @@ class Article
   end  
 
 end  
+
+initialize  
+インスタンス再生時に呼び出し  

@@ -2492,3 +2492,52 @@ li {
  float: left;
 }
 ```
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Progate</title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <!-- ここからHTMLを書き始めてください -->
+    <div class ="header">
+      <div class ="header-logo">Progate</div>
+       <div class ="header-list">
+        <ul>
+        <li>プログラミングとは</li>
+        <li>学べるレッスン</li>
+        <li>お問い合わせ</li>
+       </ul>
+      </div>
+    </div>
+    <div class ="main">
+      <div class = "main-container">
+        <h1>HELLO WORLD<span>.</span></h1>
+        <h2>プログラミングの世界へようこそ</h2>
+      </div>
+    </div>
+    
+    <div class ="contents">
+      <h3 class="contents-title">学べるレッスン</h3>
+      <div class ="contents-item">
+        <img src="https://prog-8.com/shared/images/lesson/html/study/html.svg">
+        <p>HTML & CSS</p>
+      </div>
+      <div class ="contents-item">
+        <img src="https://prog-8.com/shared/images/lesson/html/study/php.svg">
+        <p>PHP</p>
+      </div>
+      <div class ="contents-item">
+        <img src="https://prog-8.com/shared/images/lesson/html/study/ruby.svg">
+        <p>Ruby</p>
+      </div>
+      <div class ="contents-item">
+        <img src="https://prog-8.com/shared/images/lesson/html/study/swift.svg">
+        <p>Swift</p>
+      </div>
+    </div>
+  </body>
+</html>
+```

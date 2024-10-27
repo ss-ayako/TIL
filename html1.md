@@ -2767,3 +2767,92 @@ input,textarea{
   background-color:#dee7ec;
 }
 ```
+```
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ここからCSSを書いていきましょう */
+
+.top-wrapper{
+ background-image:url(https://prog-8.com/images/html/advanced/top.png);
+ padding: 180px 0 100px 0;
+ background-size: cover;
+ text-align: center;
+}
+
+.container{
+  width:1170px;
+  margin: 0 auto;
+}
+
+h1{
+  color:white;
+  opacity: 0.7;
+  font-size:45px;
+  letter-spacing: 5px;
+}
+
+p{
+  color:white;
+  opacity: 0.7;
+}
+
+a{
+  color:white;
+  opacity: 0.7;
+}
+
+.btn-wrapper {
+padding-top:30px;
+
+}
+
+.btn-wrapper p{
+margin:15px 0;
+}
+
+.btn {
+  padding:8px 24px;
+  border-radius:4px;
+  display: inline-block;            
+  opacity: 0.8;
+}
+.btn hover{
+  opacity: 1;
+}
+
+.signup {
+  background-color:#239b76;
+}
+
+.facebook{
+  background-color:#3b5998;
+  margin-right: 10px;
+}
+
+.twitter{
+ background-color:#55acee;
+}
+
+.fa {            
+ margin-right: 5px;
+}
+
+```

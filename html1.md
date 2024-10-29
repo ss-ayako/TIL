@@ -2885,3 +2885,39 @@ margin:15px 0;
 </body>
 </html>
 ```
+```
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+/* ここからCSSを記述してください */
+.header{
+  height:90px;
+  background-color:#26d0c9;
+  color:#fff;
+}
+
+.header-logo{
+ font-size:36px; 
+ padding:20px 40px;
+    float: left;
+}
+
+.header-list li{
+   padding:33px 20px;
+   float: left;
+}
+```

@@ -2084,7 +2084,77 @@ header {
 .heading h3 {
   font-weight: normal;
 }
+```
+```
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+/* ここからCSSを記述してください */
+.header{
+  height:90px;
+  background-color:#26d0c9;
+  color:#fff;
+}
+
+.header-logo{
+ font-size:36px; 
+ padding:20px 40px;
+    float: left;
+}
+
+.header-list li{
+   padding:33px 20px;
+   float: left;
+}
+
+.main{
+  padding:100px 80px;
+}
+
+h1{
+  font-size:140px;
+}
+
+span{
+  color:#ff4a4a;
+}
+h2{
+  font-size:60px;
+}
+
+.contents{
+  height:500px;
+  margin-top:100px;
+}
+ h3{
+   font-size:28px; 
+   padding-bottom:15px;
+   border-bottom:2px solid #dee7ec;
+   
+ }
+.contents-item{
+  float:left;
+ padding:50px 40px 30px 0px; 
+}
+.contents-item p{
+  font-size:24px;
+  margin-top:30px;
+}
+```
 .message-wrapper {
   border-bottom: 1px solid #eee;
   padding-bottom: 80px;

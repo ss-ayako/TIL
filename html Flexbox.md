@@ -25,4 +25,35 @@ flex-wrap: wrapを指定すると、子要素のサイズに応じて折り返�
   
 }
 ```
-画面幅を狭めた時に2列に折り返すように  
+***
+画面幅を狭めた時に2列に折り返すように 
+```
+@media (max-width: 1000px) {
+  .flex-list {
+    flex-wrap: wrap;
+  }
+  .flex-list li {
+    width: 50%;
+  }
+}
+```
+***
+画面幅を狭めた時に1列に並ぶように  
+flex-direction: columnは子要素を上から下へ  
+縦に並べたい要素の親要素にflex-direction: columnを指定  
+margin: 0 autoとwidthを指定することで中央寄せに  
+```
+/* スマホ向けレイアウト */
+/* ブレイクポイントが670px以下の時のメディアクエリを設定してください */
+@media (max-width:670px) {
+  /* .flex-listにflex-directionを指定してください */
+  .flex-list{
+    flex-direction: column;
+  }
+  /* .flex-list liにmarginを0 autoに指定してください */
+  .flex-list li{
+    margin:0 auto;
+  }
+}
+```
+***

@@ -11,3 +11,17 @@ flex-wrap: wrapを指定すると、子要素のサイズに応じて折り返�
 折り返したい要素自身には列数に応じたwidthを指定  
 今回は2列にしたいのでwidth: 50%を指定  
 ***
+```
+.flex-list {
+  display: flex;
+  /* flex-wrapを指定してください */
+  flex-wrap: wrap
+  
+}
+.flex-list li {
+  flex: auto;
+  /* widthを50％に指定してください */
+  width:50%;
+  
+}
+```

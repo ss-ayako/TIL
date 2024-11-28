@@ -28,3 +28,32 @@
   }
 </script>
 ```
+```
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <meta charset="UTF-8">
+  <script>
+    function kaibun(){
+
+       // 入力された文字列を取得
+        let source = document.getElementById("source").value;
+        
+        // 逆順の文字列を生成
+        let reversed = "";
+        for (let i = source.length - 1; i >= 0; i--) {
+          reversed += source.charAt(i); // 1文字ずつ追加
+        }
+        
+        // 結果を表示（逆順文字列のみ）
+        document.getElementById("result").textContent = reversed;
+    }
+  </script>
+  </head>
+  <body>
+    <input id ="source">
+    <button onclick="kaibun()">回文</button>
+    <p id="result"></p>
+  </body>
+</html>
+```

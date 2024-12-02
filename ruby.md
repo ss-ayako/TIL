@@ -57,3 +57,24 @@ end
 「localhost:3000」 (後ろに/○○がないURL) に対応するルーティングは、  
 「get "/" => "コントローラ名#アクション名"」というように、URLに"/"を指定  
 ```
+```
+<header>
+      <div class="header-logo">
+        <%= link_to("TweetApp", "/") %>
+      </div>
+      <ul class="header-menus">
+        <li>
+          <%= link_to("TweetAppとは", "/about") %>
+        </li>
+      </ul>
+    </header>
+    
+    <h1>Home#top</h1>
+<p>Find me in app/views/home/top.html.erb</p>
+<div class="main top-main">
+  <div class="top-message">
+    <h2>つぶやきで、世界はつながる</h2>
+    <p>今の気持ちをつぶやいてみよう！</p>
+  </div>
+</div>
+```

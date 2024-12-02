@@ -54,3 +54,6 @@ end
   <img class="about-img" src="/tweets.png">
 </div>
 ```
+「localhost:3000」 (後ろに/○○がないURL) に対応するルーティングは、  
+「get "/" => "コントローラ名#アクション名"」というように、URLに"/"を指定  
+```

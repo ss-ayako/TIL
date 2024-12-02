@@ -9,3 +9,9 @@ class PostsController < ApplicationController
   end
 end
 ```
+```
+class HomeController < ApplicationController
+  def top
+  end
+end
+```

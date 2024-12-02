@@ -25,3 +25,32 @@ class HomeController < ApplicationController
   end
 end
 ```
+サービス紹介ページを追加しよう  
+```
+ルーティング
+Rails.application.routes.draw do
+  get "/" => "home#top"
+  get "/about" => "home#about"
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+end
+```
+```
+コントローラー
+class HomeController < ApplicationController
+  def top
+  end
+  def about
+  end
+end
+```
+```
+ビュー
+<div class="about-main">
+  <h2>TweetAppとは</h2>
+  <p>
+    SNSサービスです。
+    近況やつぶやきを投稿し、他のユーザーと楽しくコミュニケーションできます。
+  </p>
+  <img class="about-img" src="/tweets.png">
+</div>
+```

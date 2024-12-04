@@ -78,3 +78,51 @@ end
   </div>
 </div>
 ```
+```
+ビュー
+<div class="main posts-show">
+  <div class="container">
+    <div class="posts-show-item">
+      <p>
+        <%= @post.content %>
+      </p>
+      <div class="post-time">
+        <%= @post.created_at %>
+      </div>
+    </div>
+  </div>
+</div>
+```
+```
+ルーティング
+Rails.application.routes.draw do
+  get "posts/index" => "posts#index"
+  get "posts/:id" => "posts#show"
+
+  get "/" => "home#top"
+  get "about" => "home#about"
+end
+```
+一覧にリンク
+```
+<div class="main posts-index">
+  <div class="container">
+    <% @posts.each do |post| %>
+      <div class="posts-index-item">
+         <%= link_to(post.content, "/posts/#{post.id}") %>
+      </div>
+    <% end %>
+  </div>
+</div>
+```
+```
+コントローラー
+class PostsController < ApplicationController
+ def index
+    @posts = Post.all.order(created_at: :desc)
+  end
+  def show            
+   @post = Post.find_by(id: params[:id])            
+ end
+end
+```

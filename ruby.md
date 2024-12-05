@@ -126,3 +126,4 @@ class PostsController < ApplicationController
  end
 end
 ```
+投稿詳細からの編集削除

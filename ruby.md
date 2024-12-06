@@ -127,3 +127,22 @@ class PostsController < ApplicationController
 end
 ```
 投稿詳細からの編集削除
+```
+Loading development environment (Rails 5.0.3)
+[1] pry(main)> post = Post.find_by(id:2)
+  Post Load (0.1ms)  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?  [["id", 2], ["LIMIT", 1]]
+=> #<Post:0x00005585e6a43730
+ id: 2,
+ content: "今日のランチおいしかった。",
+ created_at: Fri, 31 Mar 2017 14:24:32 JST +09:00,
+ updated_at: Fri, 31 Mar 2017 14:24:32 JST +09:00>
+[2] pry(main)> post.destroy
+   (0.1ms)  begin transaction
+  SQL (0.9ms)  DELETE FROM "posts" WHERE "posts"."id" = ?  [["id", 2]]
+   (5.0ms)  commit transaction
+=> #<Post:0x00005585e6a43730
+ id: 2,
+ content: "今日のランチおいしかった。",
+ created_at: Fri, 31 Mar 2017 14:24:32 JST +09:00,
+ updated_at: Fri, 31 Mar 2017 14:24:32 
+ ```

@@ -79,6 +79,7 @@ foreach ($prices as $price) {
 
 ?>
 ```
+***
 ```
 <?php
 $prices = array(1000, 650, 750, 800);
